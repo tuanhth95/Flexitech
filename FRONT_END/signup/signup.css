@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url('backgrounf.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#signup_form{
+    margin-left: 50%;
+    margin-top: 5vh;
+    transform: translate(-50%, -0);
+    border-radius: 24px;
+    width: min(60%, 800px);;
+    height: 90vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw 10vw;
+}
+#title{
+    text-align: center;
+    color: #333;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: normal;
+}
+#namefield{
+    width: 100%;
+}
+#namefield label{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #888;
+}
+#namefield input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    border: 1px solid #888;
+}
+.field {
+    width: 100%;
+}
+.label_field{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #888;
+}
+.input_field{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    border: 1px solid #888;
+}
+input[value="Tạo tài khoản"]{
+    color: #fff;
+    text-align: center;
+    padding: 1.6rem 0rem;
+    width: 100%;
+    border-radius: 32rem;
+    background-color: black;
+    opacity: 0.25;
+    transition: all 0.2s linear 0s;
+}
+input[value="Tạo tài khoản"]:hover{
+    color: #fff;
+    text-align: center;
+    padding: 1.6rem 0rem;
+    width: 100%;
+    border-radius: 32rem;
+    background-color: black;
+    opacity: 0.5;
+    transition: all 0.2s linear 0s;
+}
+#or::before{
+    position:absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid #777;
+    z-index:0;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#or{
+    position: relative;
+    text-align: center;
+}
+#or span{
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    padding: 0rem 1rem;
+    margin: 1rem 0rem;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    z-index: 2;
+}
+#continuegoogle{
+    text-align: center;
+    padding: 1rem 0rem;
+    border: 1px solid #333;
+    border-radius: 40px; 
+    transition: all 0.2s linear 0s;
+}
+#continuegoogle:hover{
+    text-align: center;
+    padding: 1rem 0rem;
+    border: 1px solid #333;
+    border-radius: 40px; 
+    background-color: #888;
+    transition: all 0.2s linear 0s;
+    cursor: pointer;
+}
+
+#continuegoogle span{
+    position: relative;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    height: fit-content;
+    transform: translate(10%, 0%);
+}
+#continuegoogle span::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: -3.5rem;
+    background-image: url('Social media logo.svg');
+    margin-right: 1rem; 
+    height: 100%;
+    background-clip: content-box;
+    width: 2.5rem;
+}
