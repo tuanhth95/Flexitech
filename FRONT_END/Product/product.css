@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("font/Poppins.ttf");
+}
+.product_breadcrumbs{
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+}
+.product_breadcrumbs a{
+    text-decoration: none;
+    color:#33A0FF;
+}
+.product_aside{
+    float: left;
+    width: 25%;
+    min-height: 200px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+.product_main{
+    float: right;
+    width: 70%;
+    min-height: 1000px;
+    margin-right: 20px;
+}
+.product_banner{
+    background-color: #D9D9D9;
+    width: 1200px;
+    min-height: 300px;
+}
+.product_container{
+
+    width: 100%;
+    min-height: 500px;
+}
+.product_pages{
+
+    width: 100%;
+    min-height: 60px;
+}
+.product_breadcrumbs ul{
+    list-style-type: none;
+}
+.product_breadcrumbs li{
+    display: inline-block;
+    font-size: 18px;
+    color: #33A0FF;
+}
+.product_breadcrumbs ul li:nth-child(2){
+    color: #C1C8CE;
+}
+.product_breadcrumbs ul li:nth-child(4){
+    color: black;
+}
+.aside_heading{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.aside1, .aside2, .aside3, .aside4{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+select{
+    width: 80%;
+    font-size: 12px;
+    padding: 5px 10px 5px;
+    margin-left: 10px;
+}
+.container_header{
+    min-height: 100px;
+    width: auto;
+    background-color: white;
+    display: flex;
+}
+.container_header div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+.container_header select{
+    font-size: 12px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    padding-left: 20px;
+    position: relative;
+}
+.container_header select{
+    font-size: 12px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    padding-left: 20px;
+    position: relative;
+}
+.container_header option{
+    font-size: 12px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 10px;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #33A0FF;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.product_logo{
+    width: 25%;
+    height: 30px;
+    display: flex;
+    margin: 2.5%;
+    background-repeat: no-repeat;
+}
+.product_logo_container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aside-container{
+    position: relative;
+    padding: 5px;
+}
