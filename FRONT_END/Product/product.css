@@ -24,8 +24,8 @@ body{
 }
 .product_aside{
     float: left;
-    width: 25%;
-    min-height: 200px;
+    width: calc(25% - 40px);
+    height: 100%;
     margin-left: 20px;
     margin-right: 20px; 
 }
@@ -37,8 +37,8 @@ body{
 }
 .product_banner{
     background-color: #D9D9D9;
-    width: 1200px;
-    min-height: 300px;
+    width: 100%;
+    height: 40vh;
 }
 .product_container{
 
@@ -55,7 +55,7 @@ body{
 }
 .product_breadcrumbs li{
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #33A0FF;
 }
 .product_breadcrumbs ul li:nth-child(2){
@@ -65,20 +65,20 @@ body{
     color: black;
 }
 .aside_heading{
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-left: 10px;
     margin-bottom: 10px;
 }
 .aside1, .aside2, .aside3, .aside4{
     margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 20px;
     margin-bottom: 20px;
+    width: 100%;
     position: relative;
+    padding-right: 10px;
 }
 select{
     width: 80%;
-    font-size: 12px;
+    font-size: 1.2rem;
     padding: 5px 10px 5px;
     margin-left: 10px;
 }
@@ -93,10 +93,11 @@ select{
     padding-bottom: 15px;
     font-weight: bold;
     font-stretch: expanded;
+    font-size: 1.5rem;
 }
 
 .container_header select{
-    font-size: 12px;
+    font-size: 1.2rem;
     width: 300px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -105,7 +106,7 @@ select{
     position: relative;
 }
 .container_header select{
-    font-size: 12px;
+    font-size: 1.2rem;
     width: 300px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -114,7 +115,7 @@ select{
     position: relative;
 }
 .container_header option{
-    font-size: 12px;
+    font-size: 1.2rem;
     width: 300px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -186,11 +187,11 @@ select{
   }
 
 .product_logo{
-    width: 25%;
-    height: 30px;
-    display: flex;
-    margin: 2.5%;
+    flex: 25%;
+    height: 50px;
+    margin: 10px;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 .product_logo_container{
     position: relative;
@@ -200,6 +201,7 @@ select{
 .aside-container{
     position: relative;
     padding: 5px;
+    height: 100%;
 }
 
 .product_pages{
@@ -291,3 +293,18 @@ select{
     flex-shrink: 1.9;
     flex-grow: 1;
 }
+@media (max-width: 800px) {
+    .product_logo{
+        flex: 100%;
+        height: 50px;
+        margin: 10px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .product_logo_container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+  }
