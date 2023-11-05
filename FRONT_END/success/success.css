@@ -1,9 +1,8 @@
 #success {
-  width: 1021.5px;
-  height: 792.842px;
+  width: 70%;
   border-radius: 10px;
   background: #fff;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -15,20 +14,20 @@
 
 .icon .--1 {
   position: absolute;
-  left: 66px;
-  top: 26px;
+  left: 3%;
+  top: 3%;
 }
 
 .icon .--2 {
   position: absolute;
-  right: 31.5px;
-  top: 33px;
+  right: 2%;
+  top: 3%;
 }
 
 h1 {
   display: flex;
-  width: 227.508px;
-  height: 46.708px;
+  /* width: 227.508px;
+  height: 46.708px; */
   flex-direction: column;
   justify-content: flex-end;
   flex-shrink: 0;
