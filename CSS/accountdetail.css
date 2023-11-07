@@ -512,7 +512,7 @@ form .form-row .textarea{
 }
 
 
-/* sidebar */
+
 
 .sidebar {
     flex: 1;
@@ -533,39 +533,260 @@ form .form-row .textarea{
   }
 
 
-  /* footer */
-footer {
+
+
+
+
+
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 12%; */
+  }
+  .user-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 40px;
+   width: 1100px;
+   /* position: relative; */
+   overflow: hidden;
+   box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+ }
+  
+ /* .user-card:before {
+    content: '';
+    position: absolute;
+    height: 300%;
+    width: 173px;
+    background: #262626;
+    top: -60px;
+    left: -125px;
+    z-index: 0;
+    transform: rotate(17deg);
+  } */
+  
+  .user-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    /* z-index: 3; */
+  }
+  
+  .user-card-img img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    padding-right: 50px;
+  }
+  
+  .user-card-info {
+    text-align: center;
+    width: 500px;
+  }
+  
+  .user-card-info h2 {
+    /* font-size: 24px; */
+    margin: 0;
+    margin-bottom: 10px;
+    /* font-family: 'Bebas Neue', sans-serif; */
+  }
+  
+  .user-card-info p {
+    /* font-size: 14px; */
+    margin-bottom: 2px;
+  }
+  .user-card-info p span {
+   font-weight: 700;
+   margin-right: 10px;
+ }
+
+ #inputField {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-color:#2377bb;
+}
+
+
+  @media only screen and (min-width: 768px) {
+    .user-card {
+      flex-direction: row;
+      align-items: flex-start;
+    }   
+    .user-card-img {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .user-card-info {
+      text-align: left;
+    }
+  }
+ 
+  @media (max-width: 767px){
+    .wrapper{
+       padding-top: 3%;
+    }
+    .user-card:before {
+       width: 300%;
+       height: 200px;
+       transform: rotate(0);
+    }
+    .user-card-info {
+      text-align: left;
+    }
+    .user-card-info h2 {
+       margin-top: 25px;
+       font-size: 35px;
+    }
+    .user-card-info p span {
+       display: block;
+       margin-bottom: 15px;
+       font-size: 18px;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  footer {
     background-color: #2377bb;
     color: #fff;
     text-align: center;
     padding: 10px;
     display: flex;
 }
-
-.column {
-    flex: 1;
-    margin: 0 10px;
+.footer{
+  background: #2377bb;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+}
+ 
+  /* .footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 95%;
+    background: #10182F;
+    border-radius: 6px;
+  } */
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
   }
-  
-  .column h3 {
-    font-size: 18px;
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  .footer-col .links li {
+    list-style: none;
     margin-bottom: 10px;
   }
-  
-  .column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .column ul li {
-    margin-bottom: 5px;
-  }
-  
-  .column ul li a {
+  .footer-col .links li a {
     text-decoration: none;
+    color: #bfbfbf;
+  }
+  .footer-col .links li a:hover {
     color: #fff;
   }
-  
-  .column p {
-    font-size: 14px;
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    color: #afb6c7;
+  }
+  .footer-col .icons i:hover  {
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+    .footer-col form {
+      display: block;
+    }
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+    .footer-col form button {
+      margin: 10px 0 0 0;
+    }
   }
