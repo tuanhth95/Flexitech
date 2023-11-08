@@ -293,6 +293,35 @@ select{
     flex-shrink: 1.9;
     flex-grow: 1;
 }
+.nav_bar_page {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.nav_bar_page div {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0);
+    transition: all 0.1s linear 0s;
+}
+.nav_bar_page div:hover {
+    border: 1px solid #40BFFF;
+    transition: all 0.1s linear 0s;
+}
+
+.nav_bar_page div[class*="selected"]{
+    background-color: #40BFFF;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .product_logo{
         flex: 100%;
