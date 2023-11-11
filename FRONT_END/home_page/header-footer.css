@@ -106,7 +106,7 @@
 
 /* Container */
 
-.container {
+.nav-container {
     width: 100%;
     height: 50px;
     display: flex;
@@ -120,7 +120,7 @@
     margin-right:135px;
 }
 
-.container ul {
+.nav-container ul {
     display: flex;
     justify-content: flex-start; /* Align list items to the left */
     align-items: center;
@@ -130,7 +130,7 @@
     padding: 0;
 }
 
-.container li:first-child {
+.nav-container li:first-child {
     display: flex;
     background-color: hsl(208, 100%, 60%);
     color: #0c0c0c;
@@ -140,11 +140,11 @@
     align-items: center;
 }
 
-.container ul li {
+.nav-container ul li {
     margin-left: 0; /* Set the left margin to 0 for all list items */
 }
 
-.container ul li a {
+.nav-container ul li a {
     text-transform: uppercase;
     padding: 0 10px;
     text-decoration: none;
@@ -271,6 +271,81 @@
         position: relative;
     }
 }
+
+/* Recommend products */
+
+.recommend-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    font-size: 15px;   
+    color:#00070b;
+    margin-left: 135px;
+    float: hidden;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-product img {
+    width: 80%;
+}
+
+.product-description{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    flex-direction: row;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.type, .name-product{
+margin-bottom: 5px;
+}
+
+.type {
+    color: #525151;
+}
+
+.name-product{
+    font-weight: bold;
+}
+
+.sale-price, .original-price {
+    /* Adjust styles for prices to be in a row */
+    display: inline-block;
+    margin-left: 2px; 
+}
+
+.sale-price {
+color: #40BFFF;
+font-size: 13px;
+font-weight: bold;
+}
+
+.original-price {
+color: #D9D9D9;
+text-decoration: line-through;
+font-size: 12px;
+}
+  
 
 /*Contact Section*/
 
