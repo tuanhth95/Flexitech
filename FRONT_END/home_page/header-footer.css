@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Jost', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -13,18 +13,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #f5f5f5;
-    z-index: 9;
+    background: #fff;
+    z-index: 1;
 }
 .nav {
     padding: 10px 10vw;
     display: flex;
     justify-content: space-between;
     gap: 100px;
+    /* margin-left: 135px; */
+    margin-right: 135px;
 }
 
-.brand-logo {
-    height: 60px;
+.logo{
+    height: 80px;
 }
 
 .nav-items {
@@ -34,9 +36,10 @@
 }
 
 .nav-items i{
-    color: #45A2D7;
-    margin-right: 10px;
-    font-size: 20px;
+    color: #33a0ff;
+    /* margin-right: 10px; */
+    gap: 10px;
+    font-size: 25px;
     transition: all .42s;
 }
 
@@ -65,29 +68,8 @@
     border-bottom-left-radius: 20px;   
 }
 
-/* .search-btn i {
-    width: 20%;
-    height: 40px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #fff;
-    color: #3d3a3a;
-    text-transform: capitalize;
-    font-size: 15px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-} */
-
-/* .search-box::placeholder {
-    color:#a9a9a9;
-} */
-
 .nav-items a {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .nav-items a img {
@@ -107,7 +89,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background: #45A2D7;
+    background: #33a0ff;
     color: #fff;
     text-transform: capitalize;
     font-size: 13px;
@@ -115,56 +97,89 @@
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    transition: all .42s;
 }
 
+.sign-in button:hover{
+    transform: scale(1.1);
+}
 
-.links-container{
+/* Container */
+
+.container {
     width: 100%;
-    height: 70px;
+    height: 50px;
     display: flex;
-    padding: 10px 10vw;
-    justify-content: center;
+    justify-content: left; /* 'left' is not a valid value for justify-content, use 'flex-start' instead */
     align-items: center;
-    gap: 25px;
-    list-style: none;
+    gap: 20px; /* Removed the second value, it's not needed for 'gap' */
     border-top: 1px solid #d1d1d1;
-    font-size: 15px;
+    font-size: 14px;
+    position: sticky;
+    margin-left: 135px;
+    margin-right:135px;
 }
 
-.link-item:first-child a{
+.container ul {
     display: flex;
-    background-color: #45A2D7;
+    justify-content: flex-start; /* Align list items to the left */
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container li:first-child {
+    display: flex;
+    background-color: hsl(208, 100%, 60%);
     color: #0c0c0c;
     width: 250px;
-    height: 50px;
+    height: 40px;
     justify-content: center;
     align-items: center;
 }
 
-.link{
+.container ul li {
+    margin-left: 0; /* Set the left margin to 0 for all list items */
+}
+
+.container ul li a {
     text-transform: uppercase;
     padding: 0 10px;
-    margin: 0 5px;
     text-decoration: none;
     color: #383838;
-    opacity: 0.5;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-.link:hover{
-    opacity: 1;
+/* Media query for smaller screens if needed */
+@media only screen and (max-width: 768px) {
+    /* Additional styles for smaller screens */
 }
+
 
 /* Quảng cáo đầu trang */
-.container {
-    padding: 5px 20vw;
+
+.ad-container{
     display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+.sidebar, .product-image{
+    flex: 1 1 100px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
 }
+  
+.sidebar{
+    flex: 0.35;
+}
+
 .sidebar {
-    line-height: 0.5;
+    line-height: 0.75;
 }
 
 .sidebar ul {
@@ -178,7 +193,7 @@
 
 .sidebar li {
     margin-bottom: 1px; 
-    border: 1px solid rgb(69, 68, 68);/* Điều chỉnh khoảng cách giữa các mục */
+    border: 0.5px solid #a9a9a9;
 }
   
 .sidebar li a {
@@ -188,21 +203,13 @@
     padding: 14px 16px;
     text-decoration: none;
     width: 250px;
-    height: 30px;
-    /* border: 1px solid rgb(69, 68, 68); */
+    height: 40px;
 }
   
 .sidebar li a:hover {
-    background-color: #45A2D7;
+    background-color: #33a0ff;
     color: white;
 }
-  
-/* .product-image img{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 250px;
-} */
 
 .product-image {
     position: relative;
@@ -217,32 +224,60 @@
 .button-more-discovery {
     display: flex;
     position: absolute;
-    bottom: 5;
-    width: 30%;
+    top: 85%;
+    bottom: 15%;
+    left: 10%;
+    right: 90%;
+    width: 25%;
     height: 40px;
     align-items: center;
     justify-content: center;
-    background-color: #45A2D7; 
-    color: #faf5f5; 
+    background-color: #f20707; 
     text-align: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    transition: all .2s;
 }
 
+.button-more-discovery a{
+    color: rgb(248, 246, 246);
+}
 .button-more-discovery:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
+@media only screen and (max-width: 768px) {
+    .toggle-button {
+        display: block; /* Display the toggle button on smaller screens */
+    }
 
-/* .product-details {
-    width: 30%;
-} */
+    .sidebar {
+        display: none; /* Hide the sidebar by default on smaller screens */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        z-index: 1;
+    }
+
+    .sidebar.active {
+        display: block; /* Display the sidebar when active */
+    }
+
+    .ad-container {
+        position: relative;
+    }
+}
 
 /*Contact Section*/
+
 .contact {
-    background-color: #45A2D7;
+    background-color: #33a0ff;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
 .contact-info{
@@ -251,16 +286,19 @@
     gap: 3rem;
     font-size: 15px;   
     color:#00070b;
+    margin-left: 10px;
 }
 
 .first-info img{
-    width: 140px;
+    width: 90px;
     height: auto;
 }
 
 .forth-info iframe{
-    width: 300px;
+    width: 250px;
     height: auto;
+    margin-right: 10px;
+
 }
 
 .contact-info h4{
@@ -268,18 +306,22 @@
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    line-height: 2;
+    line-height: 3;
 }
 
 .contact-info p{
-    color: #0a0909;
+    color: #313030;
     font-size: 15px;
     font-weight: 400;
-    /* text-transform: capitalize; */
     line-height: 1.5;
     margin-bottom: 10px;
     cursor: pointer;
     transition: all .42s;
+}
+
+.first-info p{
+    font-size: 13px;
+
 }
 
 .contact-info p:hover{
@@ -287,7 +329,7 @@
 }
 
 .social-icon{
-    color: #565656;
+    color: #fff;
     margin-right: 10px;
     font-size: 20px;
     transition: all .42s;
@@ -300,5 +342,90 @@
 .end-text{
     background-color: #edfff1;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    height: 30px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+/* media queries */
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    header .navbar{
+        position: sticky;
+        z-index: 1;
+        top:100%; left:0; right:0;
+    }
+
+    header .nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        display: block;
+    }
+    
+    header .container{
+        font-size: 70%;
+    }
+
+    header .container a:first-child{
+        width: 70%;
+        height: 70%;
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .nav-items {
+        margin-top: 10px; /* Adjust spacing between items */
+    }
+
+    .search {
+        display: none; /* Hide search box on smaller screens */
+    }
+
+    .sign-in-btn {
+        font-size: 14px; /* Adjust font size for the sign-in button */
+    }
+}
+
+/* Responsive for Contact section */
+
+@media only screen and (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+
+    .first-info img {
+        width: 60px;
+    }
+
+    .social-icon i{
+        font-size: 70%;
+    }
+
+    .forth-info iframe {
+        width: 100%;
+    }
+
+    .contact-info h4{
+        font-size: 70%
+    }
+
+    .contact-info p{
+        font-size: 70%
+    }
 }
