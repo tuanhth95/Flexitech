@@ -1,13 +1,291 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <div>
-        <img src="/images/">
+    <div class="product">
+        <div class="product_breadcrumbs">
+            <ul class="breadcrumbs">
+                <li><a href="#"> Trang Chủ </a></li>
+                <li> / </li>
+                <li> Sản Phẩm </li>
+                <li> Mainboard </li>
+            </ul>
+        </div>
+        <span class="product_aside">
+            <span class="aside1">
+                <div class="aside-container">
+                <div class="aside_heading">
+                    SẢN PHẨM
+                </div>
+                <label class="container">Mainboard
+                    <input type="checkbox" checked="checked" id="check1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Bộ nhớ
+                    <input type="checkbox" checked="checked" id="check2">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Ram
+                    <input type="checkbox" checked="checked" id="check3">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">VGA card
+                    <input type="checkbox" checked="checked" id="check4">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">CPU
+                    <input type="checkbox" checked="checked" id="check5">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Keo tản nhiệt
+                    <input type="checkbox" checked="checked" id="check6">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+            </span>
+            <span class="aside2">
+                <div class="aside-container">
+                <div class="aside_heading">
+                    MỨC GIÁ
+                </div>
+                <label for="lang-select1"></label>
+                <select name="lang" id="lang-select">
+                <option>1</option>
+                <option>2</option>
+                <option value="dart" selected>Mức giá</option>
+                </select>
+                </div>
+            </span>
+            <span class="aside3">
+                <div class="aside-container">
+                <div class="aside_heading">
+                    TÌNH TRẠNG
+                </div>
+                <label for="lang-select2"></label>
+                <select name="lang" id="lang-select">
+                    <option></option>
+                    <option></option>
+                    <option value="dart" selected>Tình trạng</option>
+                    </select>
+                </div>
+            </span>
+            <span class="aside4">
+                <span class="aside-container">
+                    <div class="aside_heading">
+                        THƯƠNG HIỆU
+                    </div>
+                    <span class="product_logo_container">
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_1.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_2.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_3.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_4.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_5.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_6.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_7.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_8.png');"></a>
+                        <a href="" class="product_logo" style="background-image: url('/src/logo_9.png');"></a>
+                    </span>
+                </span>
+            </span>
+        </span>
+        <div class="product_main">
+            <div class="product_banner">
+
+            </div>
+            <div class="product_container">
+                <div class="container_header">
+                    <div> Sắp xếp theo</div>
+                    <label for="lang-select1"></label>
+                    <select name="lang" id="lang-select1">
+                    <option></option>
+                    <option></option>
+                    <option value="dart" selected>Mức giá</option>
+                    </select>
+                    <div>Số lượng</div>
+                    <label for="lang-select1"></label>
+                    <select name="lang" id="lang-select2">
+                    <option></option>
+                    <option></option>
+                    <option value="dart" selected>XS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product_pages">
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="\img\product_img.png" alt="">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>$299,43</span>
+                        <span>$534,33</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_bar_page">
+                <div>1</div>
+                <div>2</div>
+                <div class="selected">3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

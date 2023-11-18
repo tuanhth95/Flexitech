@@ -1,25 +1,17 @@
 const express = require('express')
 const path = require('path')
 require('dotenv').config()
+const configViewEngine = require('./config/ViewEngine')
+const webroute = require('./routes/Webroute')
 
 
 const app = express()
 const port = process.env.PORT || 3000
 
-//config template engine
-app.set('views', path.join(__dirname,'views'))
-app.set('view engine', 'ejs')
+configViewEngine(app);
 
-//config static files
-app.use(express.static(path.join(__dirname,'public')))
+app.use('/v1', webroute)
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-app.get('/themrout', (req, res) => {
-  // res.send('Đây là route mới được thêm')
-  res.render('sample.ejs')
-})
 
 
 app.listen(port, () => {
