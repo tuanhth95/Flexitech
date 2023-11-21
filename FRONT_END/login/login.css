@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    min-width: 600px;
+    min-height: 600px;
+}
+
+body{
+    background-image: url('backgrounf.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.form{
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: min(90vw, 600px);
+    height: 90%;
+    padding: min(72px, 5%) min(72px, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.login_title{
+    width: 100%;
+    font-size: 3.2rem;
+    color: #333;
+    line-height: normal;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 600;
+
+}
+.login_google{
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_google:hover{
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#logo_google{
+    width: 24px;
+    height: auto;
+    margin: 12px;
+}
+#google_text{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #666;
+}
+#divider{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+#divider div:first-of-type{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    color: #666;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#divider div:first-of-type span{
+    margin: 10px;
+}
+#divider div:last-of-type{
+    width: 100%;
+    border: 1px solid #666;
+    height: 0px;
+    position: absolute;
+    top:50%;
+    z-index: 1;
+}
+.email{ 
+    width: 100%;
+}
+.email label{
+    font-size: 1.5rem;
+}
+.email input{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid #999;
+}
+.password{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.password div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.password div i{
+    color: #111;
+}
+.password input{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 7px;
+    border: 1px solid #999;
+}
+.login_btn{
+    width: 100%;
+    height:auto;
+    background-color: #111;
+    opacity: 0.25;
+    border-radius: 32px;
+    text-align: center;
+    padding: 20px;
+}
+.login_btn:hover{
+    width: 100%;
+    height:auto;
+    background-color: #111;
+    opacity: 0.5;
+    border-radius: 32px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.login_btn span{
+    margin: 20px;
+    color: #fff;
+    font-size: 2rem;
+}
+.other{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.other div:first-of-type{
+    font-size: 2rem;
+}
+.other div:last-of-type{
+    font-size: 2rem;
+}
