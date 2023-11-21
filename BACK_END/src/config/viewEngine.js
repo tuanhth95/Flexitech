@@ -6,5 +6,7 @@ const configViewEngine = (app) => {
 
     //config static files: image/css/js
     app.use(express.static(path.join('./src', 'public')));
+    app.use(express.json());
+    app.use(express.urlencoded({extended: true}));
 }
 module.exports = configViewEngine;
