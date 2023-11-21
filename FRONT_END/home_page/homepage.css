@@ -5,6 +5,10 @@ h2 {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 150%;
+<<<<<<< HEAD
+=======
+    padding: 0 10vw;
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
 }
 .product-container::-webkit-scrollbar{
     display: none;
@@ -210,7 +214,10 @@ h2 {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
   @media (max-width: 480px) {
     .product-container-1 {
       grid-template-columns: 1fr;
@@ -234,7 +241,11 @@ h2 {
     font-size: 110%;
     color:  #33A0FF;
     text-align: center;
+<<<<<<< HEAD
     margin-left: 25%;
+=======
+    margin-left: 20%;
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
     margin-right: 2%;
 }
 .IMG{
@@ -244,6 +255,11 @@ h2 {
     padding: 0 10vw;
     width: 100%;
     height: auto;
+<<<<<<< HEAD
+=======
+    margin-top: 10%;
+    margin-bottom: 10%;
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
 }
 img{
     width: 100%;
@@ -269,6 +285,7 @@ h3{
     font-weight: 600;
     font-size: 110%;
 }
+<<<<<<< HEAD
 .general-product{
     display: grid;
     grid-template-columns: repeat(3, 1fr);;
@@ -277,11 +294,14 @@ h3{
     width: 100%;
     height: auto;
 }
+=======
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
 .product{
     display: inline-block;
 }
 @media (max-width: 600px) {
     .general-product {
+<<<<<<< HEAD
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -308,6 +328,11 @@ h3{
 .pre-btn:hover img, .nxt-btn:hover img{
     opacity: 1;
 }
+=======
+      grid-template-columns: repeat( 1fr);
+    }
+  }
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
 
 .container {
     display: flex;
@@ -364,4 +389,8 @@ h3{
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 70159fb9e4dbb01858b42ea2451a6b96166ac360
