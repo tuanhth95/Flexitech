@@ -78,12 +78,11 @@
 }
 
 .sign-in{
-    width: 800px;
     display: flex;
 }
 
 .sign-in-btn {
-    width: 20%;
+    width: max-content;
     height: 40px;
     padding: 10px 20px;
     border: none;
