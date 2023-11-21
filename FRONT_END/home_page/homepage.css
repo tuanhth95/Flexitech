@@ -208,14 +208,10 @@ h2 {
 }
 @media (max-width: 600px) {
     .product-container-1 {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
-  @media (max-width: 480px) {
-    .product-container-1 {
-      grid-template-columns: 1fr;
-    }
-  }
+
 .product-mainboard {
     flex-basis: calc(25% - 10px);
     margin-bottom: 10px;
