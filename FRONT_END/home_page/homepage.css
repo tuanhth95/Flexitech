@@ -202,7 +202,7 @@ h2 {
 }
 .product-container-1 {
     display: grid;
-    grid-template-columns: repeat(4, minmax(28%, 1fr));;
+    grid-template-columns: repeat(4, minmax(15%, 1fr));;
     gap: 5px;
     padding: 0 10vw;
 }
