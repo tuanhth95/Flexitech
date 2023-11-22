@@ -42,15 +42,19 @@
             <input class="login_btn" type="submit" value="Đăng nhập">
         </form> -->
         <form action="/signinReq" method="post">
-            <label for="emailfield"> Địa chỉ email </label><br>
-            <input type="text" name="emailfield" id="emailfield">
-            <label for="passfield"> Mật khẩu </label>
-            <input type="text" name="passfield" id="passfield">
+            <div id="email">
+                <label for="emailfield"> Địa chỉ email </label><br>
+                <input type="text" name="emailfield" id="emailfield">
+            </div>
+            <div id="password">
+                <label for="passfield"> Mật khẩu </label>
+                <input type="text" name="passfield" id="passfield">
+            </div>
             <input class="login_btn" type="submit" value="Đăng nhập">
         </form>
         <div class="other">
             <div><a href="">Quên mật khẩu</a></div>
-            <div>Chưa có tài khoản ?<a href="#">đăng ký</a></div>
+            <div>Chưa có tài khoản ?<a href="/login">đăng ký</a></div>
         </div>
     </div>
 </body>

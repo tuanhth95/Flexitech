@@ -1,6 +1,6 @@
 const express = require('express');
 const {getLoginPage, authorizeSignin}  = require('../controllers/loginController');
-const getSignupPage = require('../controllers/signupController')
+const {getSignupPage, signupRequest} = require('../controllers/signupController')
 const connections = require('../config/database');
 
 const router = express.Router();
@@ -10,6 +10,8 @@ router.get('/login', getLoginPage);
 router.get('/signup', getSignupPage);
 
 router.post('/signinReq', authorizeSignin);
+
+router.post('/signupReq', signupRequest);
 // router.get('/hello', (req, res) => {
 //     res.send('hello world!');
 // });

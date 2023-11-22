@@ -11,31 +11,33 @@
 <body>
     <div id="signup_form">
         <div id="title"><span>Đăng ký</span></div>
-        <div id="namefield" class="field">
-            <label for="name" class="label_field">Họ và tên</label><br>
-            <input type="text" name="name" id="name"  class="input_field">
-        </div>
-        <div id="userfield" class="field">
-            <label for="username" class="label_field">Tên đăng nhập</label><br>
-            <input type="text" name="username" id="username"  class="input_field">
-        </div>
-        <div id="emailfield" class="field">
-            <label for="email" class="label_field">Email</label><br>
-            <input type="text" name="email" id="email"  class="input_field">
-        </div>
-        <div id="phonefield" class="field">
-            <label for="phone" class="label_field">Số điện thoại</label><br>
-            <input type="text" name="phone" id="phone"  class="input_field">
-        </div>
-        <div id="passfield" class="field">
-            <label for="password" class="label_field">Mật khẩu</label><br>
-            <input type="text" name="password" id="password"  class="input_field">
-        </div>
-        <div id="retypefield" class="field">
-            <label for="retype" class="label_field">Nhắc lại mật khẩu</label><br>
-            <input type="text" name="retype" id="retype"  class="input_field">
-        </div>
-        <input type="submit" value="Tạo tài khoản">
+        <form action="/signupReq" method="POST">
+            <div id="namefield" class="field">
+                <label for="name" class="label_field">Họ và tên</label><br>
+                <input type="text" name="name" id="name"  class="input_field">
+            </div>
+            <div id="userfield" class="field">
+                <label for="username" class="label_field">Tên đăng nhập</label><br>
+                <input type="text" name="username" id="username"  class="input_field">
+            </div>
+            <div id="emailfield" class="field">
+                <label for="email" class="label_field">Email</label><br>
+                <input type="text" name="email" id="email"  class="input_field">
+            </div>
+            <div id="phonefield" class="field">
+                <label for="phone" class="label_field">Số điện thoại</label><br>
+                <input type="text" name="phone" id="phone"  class="input_field">
+            </div>
+            <div id="passfield" class="field">
+                <label for="password" class="label_field">Mật khẩu</label><br>
+                <input type="text" name="password" id="password"  class="input_field">
+            </div>
+            <div id="retypefield" class="field">
+                <label for="retype" class="label_field">Nhắc lại mật khẩu</label><br>
+                <input type="text" name="retype" id="retype"  class="input_field">
+            </div>
+            <input type="submit" value="Tạo tài khoản">
+        </form>
         <div id="or">
             <span>Hoặc</span>
         </div>
@@ -43,5 +45,10 @@
             <span>Tiếp tục với google </span> 
         </div>
     </div>
+    <script>
+        if (<%=exist%> == true){
+            alert(" Tai khoan da ton tai");
+        }
+    </script>
 </body>
 </html>

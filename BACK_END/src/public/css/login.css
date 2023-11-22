@@ -101,33 +101,36 @@ form {
     justify-content: space-around;
 }
 
-.email{ 
+#email{ 
     width: 100%;
 }
-.email label{
+#email label{
     font-size: 1.5rem;
 }
-.email input{
+#email input{
     width: 100%;
     font-size: 2rem;
     padding: 1rem;
     border-radius: 7px;
     border: 1px solid #999;
 }
-.password{
+#email{
+
+}
+#password{
     width: 100%;
     font-size: 1.5rem;
 }
-.password div{
+#password div{
     margin-top: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.password div i{
+#password div i{
     color: #111;
 }
-.password input{
+#password input{
     width: 100%;
     font-size: 2rem;
     padding: 1rem;
