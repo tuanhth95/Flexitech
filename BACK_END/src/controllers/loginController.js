@@ -9,6 +9,7 @@ const authorizeSignin = (req, res) => {
     connections.query(
         'select * from nguoidung where email = "' + req.body.emailfield + '" and matkhau = "' + req.body.passfield + '"',
         function(err, results, fields){
+            console.log(results);
             if(results.length > 0) {
                 res.render('OK.ejs');
             }

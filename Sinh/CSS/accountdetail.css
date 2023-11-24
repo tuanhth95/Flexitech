@@ -12,11 +12,12 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
+    justify-content: space-between;
 }
 
 /* CSS cho phần bên trái của header */
 .header-left {
-    flex: 1;
+  flex: 0 0 auto; 
 }
 
 .logo img {
@@ -26,58 +27,83 @@ header {
 
 /* CSS cho phần giữa của header */
 .header-center {
-    flex: 2;
+    flex: 1;
     text-align: center;
 }
-
-.search input {
-    width: 500px;
-    height:20px;
-    padding: 5px;
-    border-radius: 50px;
-    border-color: #33A0FF;
+.input-box {
+  position: relative;
+  height: 76px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
-.search button {
-    background-color: #ffffff;
-    color: #33A0FF;
-    border: none;
-    /* border-radius: 5px; */
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+.input-box .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+.input-box .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .input-box {
+    height: 66px;
+    margin: 0 8px;
+  }
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+  .input-box input {
+    padding: 0 112px 0 50px;
+  }
+  .input-box .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
 /* CSS cho phần bên phải của header */
 .header-right {
-    flex: 1;
-    text-align: right;
+  flex: 0 0 auto; 
 }
 
-.cart {
+.cart  {
     float: left;
     text-align: center;
 }
 
-.user {
-    float: left;
-    text-align: center;
-}
-
-.user a{
-    text-decoration: none;
-    color: #fff;
-}
-.user button {
-    
-    background-color: #33A0FF;
-    color: #fff;
-    border: #33A0FF;
-    border-radius: 100px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    height: 40px;
-}
 
 .cart i {
     background-color: #ffffff;
@@ -91,8 +117,14 @@ header {
 .cart i{
     font-size: 28px;
 }
-.user button {
-    font-size: 16px;
+
+
+
+/* Sử dụng media query để ẩn phần tử khi độ rộng màn hình nhỏ hơn 600px */
+@media (max-width: 800px) {
+  #header-right-hide {
+      display: none; /* Ẩn phần tử */
+  }
 }
 /* Thêm phần còn lại của CSS của bạn tại đây */
 
@@ -120,7 +152,7 @@ nav {
 .flexnav, .menu-button {
     /* font-family: Lato, Helvetica, sans-serif; */
     line-height: 1;
-    background: #2b2f3a;
+    background: rgb(2 22 75);
 }
 
 .flexnav {
@@ -155,7 +187,7 @@ nav {
 }
 
 .flexnav li a {
-    color: #7a8189;
+    color: #5ea5f6;
     -webkit-transition: color .2s ease-out;
     -moz-transition: color .2s ease-out;
     -ms-transition: color .2s ease-out;
@@ -195,7 +227,7 @@ nav {
     position: absolute;
     width: 26px;
     height: 26px;
-    border: 1px solid #7a8189;
+    border: 1px solid #5ea5f6;
     right: 13px;
     top: 13px;
     border-radius: 23px;
@@ -207,8 +239,8 @@ nav {
     width: 10px;
     height: 10px;
     position: absolute;
-    border-bottom: 1px solid #7a8189;
-    border-left: 1px solid #7a8189;
+    border-bottom: 1px solid #5ea5f6;
+    border-left: 1px solid #5ea5f6;
     right: 21px;
     top: 20px;
     -webkit-transform: rotate(-45deg);
@@ -243,11 +275,11 @@ nav {
     position: relative;
     padding: 0;
     margin: 0;
-    border-top: 1px solid #31353f;
+    border-top: 1px solid rgb(2 22 75);
 }
 
 .flexnav ul li a {
-    background: #2b2f3a;
+    background: rgb(2 22 75);
     padding: 12px 22px;
     display: block;
     width: 200px;
@@ -300,7 +332,7 @@ nav {
     }
 
     .flexnav>li {
-        border-top: 1px solid #31353f;
+        border-top: 1px solid rgb(2 22 75);
     }
 
     .flexnav ul, .flexnav ul ul {
