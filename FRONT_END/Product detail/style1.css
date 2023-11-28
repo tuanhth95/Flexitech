@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+.logo {
+    width: 200px; /* Độ rộng của vùng chứa logo */
+    height: 200px; /* Độ cao của vùng chứa logo */
+    overflow: hidden; /* Ẩn bất kỳ phần nào của logo vượt ra khỏi vùng */
+    display: flex; /* Sử dụng flexbox để căn giữa logo */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+}
+
+nav {
+    background-color: rgb(131, 170, 209);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: auto;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.97);
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+
+@media (max-width: 900px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+
+    .menu-icon.active + ul {
+        display: flex;
+    }
+}
+
+@media (min-width: 900px) {
+ 
+    nav ul {
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+img{
+    width: 80%;
+    display: block;
+}
+
+.main-wrapper{
+    min-height: 80vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.container{
+    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.product-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+    border: 1px solid #ddd;
+}
+
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+Âa
+.active{
+    border-color: rgb(131, 170, 209)!important;
+}
+.hover-container div:hover{
+    border-color: rgb(131, 170, 209);
+}
+.hover-container div img{
+    width: 50px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
+}
+.product-name{
+    font-size: 32px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.9;
+    font-weight: 500;
+    color:red;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-rating span{
+    margin-right: 6px;
+}
+.product-description{
+    font-weight: 18px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+.btn-groups{
+    margin-top: 22px;
+}
+.btn-groups button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups button .fas{
+    margin-right: 8px;
+}
+.add-cart-btn{
+    background-color: rgb(131, 170, 209);
+    border: 2px solid rgb(131, 170, 209);
+    margin-right: 8px;
+}
+.add-cart-btn:hover{
+    background-color: #fff;
+    color: rgb(131, 170, 209);
+}
+.buy-now-btn{
+    background-color:red;
+    border: 2px solid red;
+}
+.buy-now-btn:hover{
+    background-color: #fff;
+    color: red;
+}
+.breadcrumb {
+    background-color: #fff;
+    padding: 12px;
+    
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.breadcrumb span {
+    color: #333;
+    font-size: 14px;
+}
+
+.breadcrumb a:hover {
+    color: rgb(131, 170, 209);
+}
+/* Add this media query at the end of your CSS */
+
+@media screen and (max-width: 900px) {
+    .breadcrumb {
+        padding: 12px;
+        text-align: left;
+    }
+
+    .breadcrumb a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .breadcrumb span {
+        font-size: 10px;
+    }
+}
+
+/* Add this CSS to your existing style1.css file or create a new CSS file */
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-detail table {
+    width: 100%; /* Adjust the width as needed */
+    border-collapse: collapse;
+    
+    flex: 1;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.product-detail table,
+.product-detail th,
+.product-detail td {
+    border: 1px solid #ddd;
+}
+
+.product-detail th,
+.product-detail td {
+    padding: 10px;
+    text-align: left;
+}
+
+.ctsp,
+.tskt {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-top: 30px;
+    flex: 2;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.tskt {
+    margin-right: 0;
+    width: 100%; /* Make .tskt fill the entire width */
+    height: 50%;
+}
+
+.ctsp h2,
+.tskt h2 {
+    color: #333;
+}
+
+
+.product-detail td:nth-child(1) {
+    background-color: #f0f8ff; /* Adjust the background color as needed */
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .product-detail {
+        flex-direction: column;
+    }
+
+    .product-detail table {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .ctsp,
+    .tskt {
+        margin-right: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-rating{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* CSS cho màn hình lớn */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    /* Các thuộc tính khác cho biểu tượng menu */
+}
+
+.menu {
+    display: block;
+    /* Các thuộc tính khác cho menu */
+}
+
+/* Media query cho màn hình thu nhỏ */
+@media screen and (max-width: 900px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle:checked + .menu-icon + ul.menu {
+        display: block;
+    }
+
+    /* Điều chỉnh kích thước và khoảng cách giữa các lựa chọn */
+    .menu li {
+        margin-bottom: 8px; /* Khoảng cách giữa các lựa chọn */
+    }
+
+    .menu a {
+        padding: 8px; /* Kích thước lựa chọn */
+        font-size: 14px; /* Kích thước chữ của lựa chọn */
+    }
+}
+
+/* CSS cho hình ảnh nhỏ */
+.hover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-container div {
+    margin: 5px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.hover-container img {
+    width: 80px; /* Điều chỉnh kích thước hình ảnh nhỏ */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-container img:hover {
+    transform: scale(1.2); /* Hiển thị hình ảnh lớn hơn khi hover */
+}
+
+/* CSS cho hình ảnh chính */
+.img-container {
+    width: 100%; /* Kích thước vùng chứa hình ảnh chính */
+    height: auto;
+    overflow: hidden; /* Ẩn phần hình ảnh vượt ra ngoài vùng chứa */
+    position: relative; /* Sử dụng relative positioning để điều chỉnh hình ảnh nội dung */
+}
+
+.img-container img {
+    width: 100%; /* Kích thước hình ảnh chiếm toàn bộ không gian của vùng chứa */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover style cho hình ảnh chính */
+.img-container img:hover {
+    transform: scale(1.1); /* Hiển thị hình ảnh lớn hơn khi hover */
+}
+/* CSS cho biểu tượng giỏ hàng */
+.cart-icon {
+    position: absolute;
+    top: 18px; /* Đặt vị trí đỉnh của biểu tượng tại đỉnh của thanh nav */
+    right: 20px; /* Điều chỉnh vị trí theo trục ngang */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon i {
+    font-size: 28px;
+    color: #333; /* Màu biểu tượng */
+}
+
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red; /* Màu nền cho số lượng sản phẩm trong giỏ hàng */
+    color: white; /* Màu chữ cho số lượng sản phẩm */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .cart-icon i {
+        font-size: 24px; /* Điều chỉnh kích thước khi độ rộng màn hình nhỏ hơn 900px */
+    }
+}
