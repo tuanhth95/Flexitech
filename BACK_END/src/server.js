@@ -17,11 +17,7 @@ const sql = mysql.createConnection({
   database: 'flexible'
 });
 sql.connect(function (err){
-  //nếu có lỗi thì in ra
-  if (err) throw err.stack;
-  //nếu thành công
   console.log('ket noi thanh cong');
-  
 });
 sql.query(
   'SELECT * FROM sanpham',
