@@ -27,7 +27,7 @@ sql.query(
   }
 );
 
-app.use('/v1', webroute)
+app.use('/', webroute)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

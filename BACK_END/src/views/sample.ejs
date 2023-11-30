@@ -24,27 +24,27 @@
                     SẢN PHẨM
                 </div>
                 <label class="container">Mainboard
-                    <input type="checkbox" id="check1" onclick="showCheckbox(this)">
+                    <input type="checkbox" id="Mainboard">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">Bộ nhớ
-                    <input type="checkbox" id="check2">
+                    <input type="checkbox" id="Bộ nhớ">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Ram
-                    <input type="checkbox" id="check3">
+                    <input type="checkbox" id="Ram">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">VGA card
-                    <input type="checkbox" id="check4">
+                    <input type="checkbox" id="VGA card">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">CPU
-                    <input type="checkbox"  id="check5">
+                    <input type="checkbox"  id="CPU">
                     <span class="checkmark"></span>
                   </label>
                   <label class="container">Keo tản nhiệt
-                    <input type="checkbox" id="check6">
+                    <input type="checkbox" id="Keo tản nhiệt">
                     <span class="checkmark"></span>
                   </label>
                 </div>
@@ -55,9 +55,11 @@
                     MỨC GIÁ
                 </div>
                 <label for="lang-select1"></label>
-                <select name="lang" id="lang-select">
-                <option>1</option>
-                <option>2</option>
+                <select name="lang" id="lang-select" class="lang-select1">
+                <option value="price1">0$ - 100$</option>
+                <option value="price2">100$ - 200$</option>
+                <option value="price3">200$ - 300$</option>
+                <option value="price4">300$ - 400$</option>
                 <option value="dart" selected>Mức giá</option>
                 </select>
                 </div>
@@ -68,11 +70,11 @@
                     TÌNH TRẠNG
                 </div>
                 <label for="lang-select2"></label>
-                <select name="lang" id="lang-select">
-                    <option></option>
-                    <option></option>
+                <select name="lang" id="lang-select" class="lang-select2">
+                    <option value="status1">Mới</option>
+                    <option value="status2">Đã sử dụng</option>
                     <option value="dart" selected>Tình trạng</option>
-                    </select>
+                </select>
                 </div>
             </span>
             <span class="aside4">
@@ -81,15 +83,15 @@
                         THƯƠNG HIỆU
                     </div>
                     <span class="product_logo_container">
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_1.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_2.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_3.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_4.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_5.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_6.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_7.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_8.png');"></a>
-                        <a href="" class="product_logo" style="background-image: url('/src/logo_9.png');"></a>
+                        <a id="Asus" class="product_logo" style="background-image: url('/src/logo_1.png');"></a>
+                        <a id="Kingmax" class="product_logo" style="background-image: url('/src/logo_2.png');"></a>
+                        <a id="Antec" class="product_logo" style="background-image: url('/src/logo_3.png');"></a>
+                        <a id="Intel" class="product_logo" style="background-image: url('/src/logo_4.png');"></a>
+                        <a id="Creative" class="product_logo" style="background-image: url('/src/logo_5.png');"></a>
+                        <a id="CoolerMaster" class="product_logo" style="background-image: url('/src/logo_6.png');"></a>
+                        <a id="MSI" class="product_logo" style="background-image: url('/src/logo_7.png');"></a>
+                        <a id="AMD" class="product_logo" style="background-image: url('/src/logo_8.png');"></a>
+                        <a id="Crucial" class="product_logo" style="background-image: url('/src/logo_9.png');"></a>
                     </span>
                 </span>
             </span>
@@ -117,7 +119,23 @@
                 </div>
             </div>
             <div class="product_pages">
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" kind = "Mainboard" status="New">
+                    <img src="\img\product_img.png" alt="Intel Core i9 picture">
+                    <div><span>GIGABYTE</span></div>
+                    <div>Intel core i9</div>
+                    <div>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-checked"></span>
+                        <span class="fa fa-star start-unchecked"></span>
+                    </div>
+                    <div>
+                        <span>299.43</span>
+                        <span>534,33$</span>
+                    </div>
+                </div>
+                <div class="product-card" brand = "Asus" status="New">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -129,11 +147,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="New">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -145,11 +163,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -161,11 +179,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -177,11 +195,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>99.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -193,11 +211,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -209,11 +227,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -225,11 +243,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -241,11 +259,11 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" brand = "Asus" status="Used">
                     <img src="\img\product_img.png" alt="">
                     <div><span>GIGABYTE</span></div>
                     <div>Intel core i9</div>
@@ -257,23 +275,7 @@
                         <span class="fa fa-star start-unchecked"></span>
                     </div>
                     <div>
-                        <span>$299,43</span>
-                        <span>$534,33</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="\img\product_img.png" alt="">
-                    <div><span>GIGABYTE</span></div>
-                    <div>Intel core i9</div>
-                    <div>
-                        <span class="fa fa-star start-checked"></span>
-                        <span class="fa fa-star start-checked"></span>
-                        <span class="fa fa-star start-checked"></span>
-                        <span class="fa fa-star start-checked"></span>
-                        <span class="fa fa-star start-unchecked"></span>
-                    </div>
-                    <div>
-                        <span>$299,43</span>
+                        <span>299.43</span>
                         <span>$534,33</span>
                     </div>
                 </div>

@@ -9,7 +9,10 @@ body{
 }
 @font-face {
     font-family: 'Poppins';
-    src: url("font/Poppins.ttf");
+    src: url("/font/Poppins.ttf");
+}
+a {
+    cursor: pointer;
 }
 .product_breadcrumbs{
     min-height: 60px;
@@ -21,6 +24,7 @@ body{
 .product_breadcrumbs a{
     text-decoration: none;
     color:#33A0FF;
+    cursor: pointer;
 }
 .product_aside{
     float: left;
@@ -337,3 +341,9 @@ select{
         flex-direction: row;
     }
   }
+
+
+
+
+
+  

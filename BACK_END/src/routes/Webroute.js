@@ -5,7 +5,7 @@ const router = express.Router()
 router.get('/', (req, res) => {
     res.send('Hello World!')
 })
-router.get('/themrout', (req, res) => {
+router.get('/product', (req, res) => {
     // res.send('Đây là route mới được thêm')
     res.render('sample.ejs')
 })
