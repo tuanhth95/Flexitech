@@ -22,69 +22,33 @@
 
 <body>
 
-   <!-- <header>
-        <nav class="navbar">
-            <div class="nav">
-                <img src="img/logo_flexitech.png" class="logo" alt="">
-                <div class="nav-items">
-                    <div class="search">
-                        <input type="text" class="search-box">
-                    </div>
-                    <a href="#"><i class='bx bx-bell'></i></a>
-                    <a href="#"><i class='bx bx-cart'></i></a>
-                    <div class="sign-in">
-                        <button class="sign-in-btn">Sign in/Sign up</button>
-                    </div>
-                </div>
-            </div>
-            <div class="ad-container">
-                <ul>
-                    <li><a href="#danhmucsanpham">Danh mục sản phẩm</a></li>
-                    <li><a href="#trangchu" >Trang chủ</a></li>
-                    <li><a href="#sanpham" >Sản phẩm</a></li>
-                    <li><a href="#lienhe" >Liên hệ</a></li>
-                    <li><a href="#vechungtoi" >Về chúng tôi</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Quảng cáo đầu trang-->
-
-    <!-- <section class="ad-container">
-        <div class="sidebar">
-            <ul>
-                <li><a href="#">Lưu trữ SSD</a></li>
-                <li><a href="#">Lưu trữ HHD</a></li>
-                <li><a href="#">CPU</a></li>
-                <li><a href="#">Ram</a></li>
-                <li><a href="#">Mainboard</a></li>
-                <li><a href="#">VGA</a></li>
-                <li><a href="#">PSU</a></li>
-                <li><a href="#">Quạt tản nhiệt</a></li>
-            </ul>
+    <!-- Banner Slider -->
+    <div class="slider-container">
+        <div class="slider">
+          <img src="img/banner-full.png" alt="Image 1">
+          <img src="img/banner-full.png" alt="Image 2">
+          <img src="img/banner-full.png" alt="Image 3">
         </div>
-        <div class="product-image">
-            <img src="img/accessories-collection.png" alt="">
-            <div class="button-more-discovery"><a href="#">Tìm hiểu ngay</a></div>
-        </div>
-        <!-- <div class="product-details">
-        </div> -->
-    <!-- </section>  -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="button-more-discovery"><a href="#">Tìm hiểu ngay</a></div>
+    </div>      
 
     <!--Sản phẩm-->
     <h2><a href="https://www.youtube.com/watch?v=yyhCLsO1wos">SẢN PHẨM GỢI Ý HÔM NAY</a></h2>
-    <div class="product-container">
+    <div class = "slider-container"><div class="product-container">
         <div class="product-card">
             <div class="product-image">
                 <span class="New">NEW</span>
                 <span class="Tên">TÊN</span>
                 <span class="Hot">HOT</span>
-                <img src="img\Rectangle 13 (2).png"
-                    class="product-thumb" alt="">
+                <a href="pageNotFound.html"><img src="img\Rectangle 13 (2).png"
+                    class="product-thumb" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
+</a>
                 <p class="product-short-des">Ổ cứng</p>
                 <p class="star">★★★★★</p>
                 <span class="price">$299.43</span><span class="actual-price">$534.33</span>
@@ -94,12 +58,13 @@
             <div class="product-image">
                 <span class="New">NEW</span>
                 <span class="Tên">TÊN</span>
-                <img src="img\Rectangle 13 (1).png"
-                    class="product-thumb" alt="">
+                <a href="pageNotFound.html"><img src="img\Rectangle 13 (1).png"
+                    class="product-thumb" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 class="product-brand">Itel core i9</h3>
+                                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
+
                 <p class="product-short-des">Ổ cứng</p>
                 <p class="star">★★★★★</p>
                 <span class="price">$299.43</span><span class="actual-price">$534.33</span>
@@ -109,24 +74,62 @@
             <div class="product-image">
                 <span class="Hot">HOT</span>
                 <span class="Tên">TÊN</span>
-                <img src="img\Rectangle 13.png"
-                    class="product-thumb" alt="">
+                <a href="pageNotFound.html"><img src="img\Rectangle 13.png"
+                    class="product-thumb" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 class="product-brand">Itel core i9</h3>
+                                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
+
                 <p class="product-short-des">Ổ cứng</p>
                 <p class = 'container-star'><span class="star">★★★★</span><span class="star_more">★</span></p>
                 <span class="price">$299.43</span><span class="actual-price">$534.33</span>
             </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="New">NEW</span>
+                <span class="Tên">TÊN</span>
+                <span class="Hot">HOT</span>
+                <a href="http://127.0.0.1:5501/FRONT_END/Product%20detail/index1.html"><img src="https://product.hstatic.net/200000722513/product/gabyte-geforce-rtx-3050-eagle-oc-8g-1_d897bd3d9a254905910d134188c57fe1_aae8887fa8dd4b8b8e0334903ca96b5c_grande.jpg"
+                    class="product-thumb" alt=""></a>
+                <button class="card-btn">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product-info">
+                                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
+
+                <p class="product-short-des">Ổ cứng</p>
+                <p class="star">★★★★★</p>
+                <span class="price">$299.43</span><span class="actual-price">$534.33</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="New">NEW</span>
+                <span class="Tên">TÊN</span>
+                <a href="pageNotFound.html"><img src="img\ram6.webp"
+                    class="product-thumb" alt=""></a>
+                <button class="card-btn">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product-info">
+                                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
+
+                <p class="product-short-des">Ổ cứng</p>
+                <p class="star">★★★★★</p>
+                <span class="price">$299.43</span><span class="actual-price">$534.33</span>
+            </div>
+        </div>
     </div>
-    </div>
+    <button class="prev" onclick="prevSlide_3()">&#10094;</button>
+    <button class="next" onclick="nextSlide_3()">&#10095;</button>
+</div>
+    
     <h2>
         <div class="container">
             <div class="button_active">MAINBOARD</div>
-            <div class="button">ASUS</div>
-            <div class="button">GIGABYTE</div>
-            <div class="button">MSI</div>
+            <div class="button"><a href="pageNotFound.html">ASUS</a></div>
+            <div class="button"><a href="pageNotFound.html">GIGABYTE</a></div>
+            <div class="button"><a href="pageNotFound.html">MSI</a></div>
         </div>
     </h2>
     <div class="product-container-1">
@@ -135,11 +138,12 @@
             <div class="product-image_1">
                 <span class="New">NEW</span>
                 <span id="productName1" class="Tên">GIGABYTE</span>
-                <img id="productImage1" src="img\Rectangle 13 (3).png" class="product-thumb_1" alt="">
+                <a href="pageNotFound.html"><img id="productImage1" src="img\Rectangle 13 (3).png" 
+                    class="product-thumb_1" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 id="productBrand1" class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
                 <p id="productShortDes1" class="product-short-des">MAINBOARD</p>
                 <p class="container-star">
                     <span id="starRating1" class="star">★★★★</span>
@@ -154,11 +158,12 @@
             <div class="product-image_1">
                 <span class="New">NEW</span>
                 <span id="productName2" class="Tên">ASUS</span>
-                <img id="productImage2" src="img\Rectangle 13 (4).png" class="product-thumb_1" alt="">
+                <a href="pageNotFound.html"><img id="productImage2" src="img\Rectangle 13 (4).png" 
+                    class="product-thumb_1" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 id="productBrand2" class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 id="productBrand2" class="product-brand">Itel core i9</h3></a>
                 <p id="productShortDes2" class="product-short-des">MAINBOARD</p>
                 <p class="star" id="productStar2">★★★★★</p>
                 <span id="productPrice2" class="price">$299.43</span>
@@ -170,11 +175,12 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName3" class="Tên">ASUS</span>
-        <img id="productImage3" src="img\Rectangle 13 (5).png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage3" src="img\Rectangle 13 (5).png" 
+            class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand3" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand3" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes3" class="product-short-des">MAINBOARD</p>
         <p class="star" id="productStar3">★★★★★</p>
         <span id="productPrice3" class="price">$299.43</span>
@@ -187,11 +193,12 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">GIGABYTE</span>
-        <img id="productImage4" src="img\Rectangle 13 (6).png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\Rectangle 13 (6).png" 
+            class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">MAINBOARD</p>
         <p class="star" id="productStar4">★★★★★</p>
         <span id="productPrice4" class="price">$299.43</span>
@@ -202,11 +209,12 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">ANTEC</span>
-        <img id="productImage4" src="img\MAINBOARD.jpg" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\MAINBOARD.jpg" 
+            class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">MAINBOARD</p>
         <p class="star" id="productStar4">★★★★★</p>
         <span id="productPrice4" class="price">$289.43</span>
@@ -217,11 +225,12 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">GIGABYTE</span>
-        <img id="productImage4" src="img\MAINBOARD2.jpg" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\MAINBOARD2.jpg" 
+            class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">MAINBOARD</p>
         <p class="container-star">
             <span id="starRating1" class="star">★★★★</span>
@@ -235,14 +244,16 @@
     <button onclick="scrollProducts(-1)" class="scroll-button left-button"><img src="img\L.png" alt=""></button>
     <button onclick="scrollProducts(1)" class="scroll-button right-button"><img src="img\R.png" alt=""></button>
 </div>
-        <div class="button_more_1"><div class="button_more">Xem thêm sản phẩm</div></div>
+        <div class="button_more_1"><a href="http://127.0.0.1:5501/FRONT_END/Product/product.html"><div class="button_more">
+            Xem thêm sản phẩm</div></a>
+    </div>
 
     </div>
     <h2>
         <div class="container">
             <div class="button_active">CPU</div>
-            <div class="button">INTEL</div>
-            <div class="button">AMD</div>
+            <div class="button"><a href="pageNotFound.html">INTEL</a></div>
+            <div class="button"><a href="pageNotFound.html">AMD</a></div>
         </div>
     </h2>
     <div class="product-container-1">
@@ -250,11 +261,12 @@
         <div id="product-container1" class="product-CPU">
             <div class="product-image_1">
                 <span id="productName1" class="Tên">INTEL</span>
-                <img id="productImage1" src="img\cpu1.png" class="product-thumb_1" alt="">
+                <a href="pageNotFound.html"><img id="productImage1" src="img\cpu1.png" 
+                    class="product-thumb_1" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 id="productBrand1" class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
                 <p id="productShortDes1" class="product-short-des">CPU</p>
                 <p class="container-star">
                     <span id="starRating1" class="star">★★★★</span>
@@ -269,11 +281,13 @@
             <div class="product-image_1">
                 <span class="New">HOT</span>
                 <span id="productName2" class="Tên">INTEL</span>
-                <img id="productImage2" src="img\cpu2.png" class="product-thumb_1" alt="">
+                <a href="pageNotFound.html"><img id="productImage2" src="img\cpu2.png" 
+                    class="product-thumb_1" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 id="productBrand2" class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 id="productBrand2" 
+                    class="product-brand">Itel core i9</h3></a>
                 <p id="productShortDes2" class="product-short-des">CPU</p>
                 <p class="star" id="productStar2">★★★★★</p>
                 <span id="productPrice2" class="price">$299.43</span>
@@ -285,11 +299,12 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName3" class="Tên">AMD</span>
-        <img id="productImage3" src="img\cpu3.png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage3" src="img\cpu3.png"
+             class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand3" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand3" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes3" class="product-short-des">CPU</p>
         <p class="star" id="productStar3">★★★★★</p>
         <span id="productPrice3" class="price">$299.43</span>
@@ -302,11 +317,11 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">INTEL</span>
-        <img id="productImage4" src="img\cpu.png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\cpu.png" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">CPU</p>
         <p class="star" id="productStar4">★★★★★</p>
         <span id="productPrice4" class="price">$299.43</span>
@@ -317,11 +332,11 @@
     <div class="product-image_1">
         <span class="New">HOT</span>
         <span id="productName4" class="Tên">INTEL</span>
-        <img id="productImage4" src="img\cpu6.png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\cpu6.png" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">CPU</p>
         <p class="star" id="productStar4">★★★★★</p>
         <span id="productPrice4" class="price">$289.43</span>
@@ -332,11 +347,11 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">INTEL</span>
-        <img id="productImage4" src="img\cpu7.png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\cpu7.png" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">CPU</p>
         <p class="container-star">
             <span id="starRating1" class="star">★★★★</span>
@@ -350,15 +365,15 @@
     <button onclick="scrollProducts_1(-1)" class="scroll-button left-button"><img src="img\L.png" alt=""></button>
     <button onclick="scrollProducts_1(1)" class="scroll-button right-button"><img src="img\R.png" alt=""></button>
 </div>
-        <div class="button_more_1"><div class="button_more">Xem thêm sản phẩm</div></div>
+        <div class="button_more_1"><a href="pageNotFound.html"><div class="button_more">Xem thêm sản phẩm</div></a></div>
 
     </div>
     <h2>
         <div class="container">
             <div class="button_active">HARD DISK</div>
-            <div class="button">TOSHIBA</div>
-            <div class="button">SEAGATE</div>
-            <div class="button">WD</div>
+            <div class="button"><a href="pageNotFound.html">TOSHIBA</a></div>
+            <div class="button"><a href="pageNotFound.html">SEAGATE</a></div>
+            <div class="button"><a href="pageNotFound.html">WD</a></div>
         </div>
     </h2>
     <div class="product-container-1">
@@ -366,11 +381,12 @@
         <div id="product-container1" class="product-hard">
             <div class="product-image_1">
                 <span id="productName1" class="Tên">WD</span>
-                <img id="productImage1" src="img\ram1.png" class="product-thumb_1" alt="">
+                <a href="pageNotFound.html"><img id="productImage1" src="img\ram1.png" 
+                    class="product-thumb_1" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 id="productBrand1" class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 class="product-brand">Itel core i9</h3></a>
                 <p id="productShortDes1" class="product-short-des">HARD DISK</p>
                 <p class="container-star">
                     <span id="starRating1" class="star">★★★★</span>
@@ -384,11 +400,12 @@
         <div id="product-container2" class="product-hard">
             <div class="product-image_1">
                 <span id="productName2" class="Tên">SEAGATE</span>
-                <img id="productImage2" src="img\ram2.png" class="product-thumb_1" alt="">
+                <a href="pageNotFound.html"><img id="productImage2" src="img\ram2.png" 
+                    class="product-thumb_1" alt=""></a>
                 <button class="card-btn">Thêm vào giỏ hàng</button>
             </div>
             <div class="product-info">
-                <h3 id="productBrand2" class="product-brand">Itel core i9</h3>
+                <a href="pageNotFound.html"><h3 id="productBrand2" class="product-brand">Itel core i9</h3></a>
                 <p id="productShortDes2" class="product-short-des">HARD DISK</p>
                 <p class="star" id="productStar2">★★★★★</p>
                 <span id="productPrice2" class="price">$299.43</span>
@@ -400,11 +417,11 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName3" class="Tên">INTEL</span>
-        <img id="productImage3" src="img\ram3.png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage3" src="img\ram3.png" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand3" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand3" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes3" class="product-short-des">HARD DISK</p>
         <p class="star" id="productStar3">★★★★★</p>
         <span id="productPrice3" class="price">$299.43</span>
@@ -417,11 +434,11 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">WD</span>
-        <img id="productImage4" src="img\ram4.png" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\ram4.png" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">HARD DISK</p>
         <p class="star" id="productStar4">★★★★★</p>
         <span id="productPrice4" class="price">$299.43</span>
@@ -432,11 +449,11 @@
     <div class="product-image_1">
         <span class="New">HOT</span>
         <span id="productName4" class="Tên">WD</span>
-        <img id="productImage4" src="img\ram.webp" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\ram.webp" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">HARD DISK</p>
         <p class="star" id="productStar4">★★★★★</p>
         <span id="productPrice4" class="price">$289.43</span>
@@ -447,11 +464,11 @@
     <div class="product-image_1">
         <span class="New">NEW</span>
         <span id="productName4" class="Tên">WD</span>
-        <img id="productImage4" src="img\ram6.webp" class="product-thumb_1" alt="">
+        <a href="pageNotFound.html"><img id="productImage4" src="img\ram6.webp" class="product-thumb_1" alt=""></a>
         <button class="card-btn">Thêm vào giỏ hàng</button>
     </div>
     <div class="product-info">
-        <h3 id="productBrand4" class="product-brand">Itel core i9</h3>
+        <a href="pageNotFound.html"><h3 id="productBrand4" class="product-brand">Itel core i9</h3></a>
         <p id="productShortDes4" class="product-short-des">HARD DISK</p>
         <p class="container-star">
             <span id="starRating1" class="star">★★★★</span>
@@ -465,10 +482,10 @@
     <button onclick="scrollProducts_2(-1)" class="scroll-button left-button"><img src="img\L.png" alt=""></button>
     <button onclick="scrollProducts_2(1)" class="scroll-button right-button"><img src="img\R.png" alt=""></button>
 </div>
-        <div class="button_more_1"><div class="button_more">Xem thêm sản phẩm</div></div>
+        <div class="button_more_1"><a href="pageNotFound.html"><div class="button_more">Xem thêm sản phẩm</div></a></div>
 
     </div>
-    <!-- <div class="button_more">Xem thêm sản phẩm</div> -->
+    <!-- <div class="button_more"><a href="pageNotFound.html">Xem thêm sản phẩm</a></div> -->
     <div class="IMG">
         <img src="img/Rectangle 80.png" alt="">
         <img src="img/Rectangle 57.png" alt="">
@@ -486,33 +503,33 @@
             <div class="title">SẢN PHẨM BÁN CHẠY</div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/cpu_intel_core_i9.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/cpu_intel_core_i9.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">CPU</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
             </div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/GVA.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/GVA.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">GVA</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
             </div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/quat.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/quat.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">Quạt tản nhiệt</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
@@ -523,33 +540,33 @@
             <div class="title">SẢN PHẨM MỚI</div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/cpu5.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/cpu5.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">CPU</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
             </div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img\gva2.png" alt="">
+                    <a href="pageNotFound.html"><img src="img\gva2.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">GVA</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
             </div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/cpu.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/cpu.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">Quạt tản nhiệt</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
@@ -560,33 +577,33 @@
             <div class="title">SẢN PHẨM NỔI BẬT</div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/cpu6.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/cpu6.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">CPU</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
             </div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img/cpu7.png" alt="">
+                    <a href="pageNotFound.html"><img src="img/cpu7.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">GVA</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
             </div>
             <div class="product-description">
                 <div class="img-product">
-                    <img src="img\quat2.png" alt="">
+                    <a href="pageNotFound.html"><img src="img\quat2.png" alt=""></a>
                 </div>
                 <div class="des-product">
                     <div class="type">Quạt tản nhiệt</div>
-                    <div class="name-product">Intel core i9</div>
+                    <a href="pageNotFound.html"><div class="name-product">Intel core i9</div></a>
                     <div class="sale-price">$299.43</div>
                     <div class="original-price">$534,33</div>
                 </div>
