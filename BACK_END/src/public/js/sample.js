@@ -156,23 +156,53 @@ function selectStatus(){
 }
 
 //filter theo checkbox
-
-// var checkboxctn = document.getElementsByClassName("aside-container");
-// var label = document.getElementsByClassName("container");
-
-// for (i = 0; i < label.length; i++) {
-//     label[i].setAttribute("checked", "unchecked");
-//     label[i].addEventListener("click", selectCheckbox);
-// }   
-// function selectCheckbox(){
-//     var select=this.getAttribute("checked");
-//     if (select=="unchecked"){
-//         this.setAttribute("checked", "checked")
-//         console.log("success");
-//     }
-//     else {
-//         this.setAttribute("checked", "unchecked")
-//         console.log("success");
-//     }
-//     console.log("done");    
-// }
+var checkbox = document.querySelectorAll("input[type=checkbox]");
+console.log(checkbox);
+for (i = 0; i < checkbox.length; i++) {
+    checkbox[i].addEventListener("change", selectCheckbox);
+    console.log(checkbox[i].checked);
+}   
+function selectCheckbox(){
+    var count=0;
+    for (i = 0; i < checkbox.length; i++) {
+        if (checkbox[i].checked) count++;
+    }   
+    if (count == 0) {
+        for (i = 0; i < pro_li.length; i++) {
+            pro_li[i].style.display = "";
+        }      
+    }
+    else if (count==1) {   
+        if (this.checked) {
+            for (i = 0; i < pro_li.length; i++) {
+                pro_li[i].style.display = "none";
+            }   
+            for (i = 0; i < pro_li.length; i++) {
+                if (pro_li[i].getAttribute("kind")==this.getAttribute("id")){
+                    pro_li[i].style.display = "";
+                }    
+            }   
+        } else {    
+            for (i = 0; i < pro_li.length; i++) {
+                if (pro_li[i].getAttribute("kind")==this.getAttribute("id")){
+                    pro_li[i].style.display = "none";
+                }   
+            } 
+        }  
+    }
+    else {
+        if (this.checked) {
+            for (i = 0; i < pro_li.length; i++) {
+                if (pro_li[i].getAttribute("kind")==this.getAttribute("id")){
+                    pro_li[i].style.display = "";
+                }    
+            }   
+        } else {
+            for (i = 0; i < pro_li.length; i++) {
+                if (pro_li[i].getAttribute("kind")==this.getAttribute("id")){
+                    pro_li[i].style.display = "none";
+                }   
+            } 
+        }  
+    }
+}
