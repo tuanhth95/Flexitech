@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /* ============ HEADER ============ */
 .contact-header {
   background-color: black;
@@ -12,6 +16,13 @@
 /* ============ NAVIGATION BAR =============== */
 nav {
   background-color: #c1c8ce;
+}
+
+/* ============= element ======================= */
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 /* ===== Table ===== */
@@ -94,6 +105,14 @@ thead tr {
   background-color: #f6f7f8;
   justify-content: space-around;
   justify-self: center;
+  align-items: center;
+}
+
+.quantity button {
+  border: none;
+  font-size: large;
+  background-color: #f6f7f8;
+  justify-content: center;
   align-items: center;
 }
 
