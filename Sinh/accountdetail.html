@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="./CSS/accountdetail.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://0.s3.envato.com/files/78833207/js/jquery.flexnav.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script src="https://0.s3.envato.com/files/78833207/js/jquery.flexnav.js"></script> -->
 
     <script src="./JS/script.js"></script>
-
 </head>
 
 <body>
@@ -22,80 +21,46 @@
                 <img src="./img/logo-none.png" alt="Logo">
             </div>
         </div>
-        
-            <div class="input-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search here..." />
-                <button class="button">Search</button>
-            
+
+        <div class="input-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here..." />
+            <button class="button">Search</button>
+
         </div>
-        
+
         <div class="header-right" id="header-right-hide">
             <div class="cart">
                 <i class="fas fa-shopping-cart"></i>
                 <i class="fas fa-sign-in-alt"></i>
             </div>
-            
+
         </div>
     </header>
-    <nav>
-        <div class="container-nav">
-            <div class="menu-button">Menu</div>
-            <ul class="flexnav" data-breakpoint="800">
-                <li><a href="#">Home</a></li>
-                <li>
-                    <a href="#">Danh mục sản phẩm</a>
-                    <ul>
-                        <li><a href="#">MainBoard</a></li>
-                        <li><a href="#">Bộ nhớ HHD</a></li>
-                        <li><a href="#">Bộ nhớ SSD</a>
-                            <ul>
-                                <li><a href="#">Samsung</a></li>
-                                <li><a href="#">Kingston</a></li>
-                                <li><a href="#">Toshiba</a></li>
-                                <li><a href="#">Corsair</a></li>
-                                <li><a href="#">Intel</a></li>
-                                <li><a href="#">Western Digital</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">CPU</a>
-                            <ul>
-                                <li><a href="#">Intel</a></li>
-                                <li><a href="#">AMD</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Fan CPU</a></li>
-                        <li><a href="#">Case</a></li>
-                        <li><a href="#">Power</a></li>
-                        <li><a href="#">Sound Card</a>
-
-                        </li>
-                        <li><a href="#">VGA Card</a>
-                            <ul>
-                                <li><a href="#">Intel</a></li>
-                                <li><a href="#">AMD</a></li>
-                                <li><a href="#">NVIDIA</a></li>
-                                <li><a href="#">ASUS</a></li>
-                                <li><a href="#">Gigabyte</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">DVD</a></li>
-                        <li>
-                            <a href="#">Keo tản nhiệt</a>
-
-                        </li>
-
-                    </ul>
-                </li>
-                <li><a href="#">Bài đăng &emsp;</a></li>
-                <li><a href="#">Về chúng tôi&emsp;</a></li>
-                <li><a href="#">Liên hệ&emsp;</a></li>
-
-            </ul>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Trang chủ</a>
+        <a href="#news">Bài đăng</a>
+        <a href="#contact">Liên hệ</a>
+        <div class="dropdown">
+          <button class="dropbtn">DANH MỤC SẢN PHẨM
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">MainBoard</a>
+            <a href="#">Bộ nhớ HHD</a>
+            <a href="#">Bộ nhớ SSD</a>
+            <a href="#">CPU</a>
+        <a href="#">VGA Card</a>
+        <a href="#">Keo tản nhiệt</a>
+          </div>
         </div>
+        <a href="#about">Về chúng tôi</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
 
-    </nav>
+
+
+
 
     <div class="wrapper">
         <div class="user-card">
@@ -104,15 +69,17 @@
             </div>
             <div class="user-card-info">
                 <h2>HỒ SƠ CỦA TÔI </h2>
-                <p><span>Họ và tên:</span> <input class="inputText"type="text" id="inputField" value="Trần Nhật Sinh"></p>
+                <p><span>Họ và tên:</span> <input class="inputText" type="text" id="inputField" value="Trần Nhật Sinh">
+                </p>
                 <p><span>Email:</span> <input type="text" id="inputField" value="nhatsinh@gmail.com"></p>
-                <p><span>Số điện thoại:</span> <input type="text" id="inputField" value="0123456789"></p>  
+                <p><span>Số điện thoại:</span> <input type="text" id="inputField" value="0123456789"></p>
                 <p><span>Tỉnh:</span> <input type="text" id="inputField" value="Thủ Đức"></p>
                 <p><span>Thành phố:</span> <input type="text" id="inputField" value="Hồ Chí Minh"></p>
                 <p><span>Địa chỉ:</span> </p>
-                <textarea id="inputField" rows="3">Đường Hàn Thuyên, khu phố 6 P, Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam </textarea>
-                    
-                       
+                <textarea id="inputField"
+                    rows="3">Đường Hàn Thuyên, khu phố 6 P, Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam </textarea>
+
+
             </div>
         </div>
     </div>
