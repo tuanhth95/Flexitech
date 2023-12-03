@@ -34,6 +34,7 @@
           viewBox="0 0 40 40"
           fill="none"
           class="--1"
+          onclick="redirectPreviousStep()"
         >
           <path
             fill-rule="evenodd"
@@ -49,6 +50,7 @@
           viewBox="0 0 25 25"
           fill="none"
           class="--2"
+          onclick="redirectFirstStep()"
         >
           <path
             opacity="0.5"
@@ -124,10 +126,11 @@
           </filter>
         </defs>
       </svg>
-      <div class="success-text">Thành công</div>
-      <button class="next-step">
+      <div id="success-text">Thành công</div>
+      <button class="done button" onclick="done()">
         <p>Hoàn thành</p>
       </button>
     </container>
+    <script src="success.js"></script>
   </body>
 </html>

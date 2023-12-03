@@ -25,6 +25,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  width: 150px;
+  height: auto;
+}
+
 /* ===== Table ===== */
 
 #minus-count {
@@ -46,7 +51,6 @@ button {
 .nav-breakcum {
   padding: 0px 10px;
   color: #33a0ff;
-  font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -70,13 +74,11 @@ tr {
   text-align: start;
   justify-content: space-between;
   align-items: center;
-  font-family: poppins;
 }
 
 thead tr {
   text-transform: uppercase;
   color: #22262a;
-  font-family: nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -131,7 +133,6 @@ thead tr {
   border-top: 2px solid #f6f7f8;
   border-bottom: 2px solid #f6f7f8;
   color: #000;
-  font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -171,7 +172,6 @@ thead tr {
 
 .order-info div {
   color: #262626;
-  font-family: nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -195,7 +195,6 @@ thead tr {
 #voucher {
   color: #262626;
   opacity: 0.5;
-  font-family: nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -206,7 +205,6 @@ thead tr {
 
 #confirm {
   color: #fff;
-  font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -217,7 +215,6 @@ thead tr {
 
 #sum-cost {
   color: #22262a;
-  font-family: Poppins;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -232,9 +229,12 @@ thead tr {
   padding: 10px 0;
   color: #fff;
   text-align: center;
-  font-family: Poppins;
   font-size: 18px;
   font-weight: 500;
   background-color: #33a0ff;
   border-radius: 10px;
+}
+
+.--1 {
+  cursor: pointer;
 }
