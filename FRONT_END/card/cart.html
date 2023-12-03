@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="success.css" />
+    <link rel="stylesheet" type="text/css" href="cart.css" />
   </head>
   <body>
     <header>
@@ -193,27 +193,27 @@
       <div id="voucher_result"></div>
       <div class="tienhang">
         <p class="--1">Tổng tiền hàng</p>
-        <p class="--2">$998</p>
+        <p class="--2" id="totalPrice">0</p>
       </div>
       <div>
         <p class="--1">Phí vận chuyển</p>
-        <p class="--2">$20</p>
+        <p class="--2" id="shippingFee">20000</p>
       </div>
       <div>
         <p class="--1">Mã giảm giá</p>
-        <p class="--2">Không</p>
+        <p class="--2">chưa có mã giảm giá</p>
       </div>
 
       <div class="break-line"></div>
       <div id="sum-cost">
         <p class="--1">Tổng chi phí</p>
-        <p class="--2">$118</p>
+        <p class="--2" id="totalCost">0</p>
       </div>
-      <button id="order">Đặt hàng</button>
+      <button id="order" onclick="redirectToCheckout()">Đặt hàng</button>
     </container>
     <div class="break-line"></div>
 
     <footer></footer>
-    <script src="card.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

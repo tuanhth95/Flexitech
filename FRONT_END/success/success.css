@@ -104,3 +104,12 @@ button p {
   line-height: normal;
   letter-spacing: -0.48px;
 }
+
+.--1,
+.--2 {
+  cursor: pointer;
+}
+
+.done {
+  cursor: pointer;
+}
