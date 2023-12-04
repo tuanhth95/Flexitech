@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+    justify-content: center;
+}
+
+.nav {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    /* background: #f6f6f6; */
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
+}
+
+.brand-logo {
+    height: 80px;
+    width: 80px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-items i {
+    color: #33a0ff;
+    /* margin-right: 10px; */
+    gap: 10px;
+    font-size: 25px;
+    transition: all .42s;
+}
+
+.nav-items i:hover {
+    transform: scale(1.3);
+}
+
+/* Style for search box  */
+
+.search {
+    width: 600px;
+    display: flex;
+    align-items: right;
+    border: 1px solid #ccc;
+    box-shadow: #a9a9a9;
+    border-radius: 4px;
+    overflow: hidden;
+    text-transform: capitalize;
+    background: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.search-box {
+    border: none;
+    padding: 8px;
+    flex: 1;
+    font-size: 13px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* .search-btn i {
+    color: #ccc;
+} */
+
+.search-btn i:hover {
+    transform: scale(1.0);
+}
+
+/* Style for cart-btn  */
+
+.cart {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #fe9b08;
+    color: white;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    padding: 4px 7px;
+    font-size: 11px;
+}
+
+
+
+.nav-items a {
+    margin-left: 5px;
+}
+
+.nav-items a img {
+    width: 80px;
+    height: 80px;
+}
+
+.sign-in {
+    display: flex;
+}
+
+.sign-in-btn {
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #33a0ff;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all .42s;
+}
+
+.sign-in button:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown */
+
+.dropdown .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Style for nav-container */
+
+.nav-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    /* 'left' is not a valid value for justify-content, use 'flex-start' instead */
+    align-items: center;
+    gap: 30px;
+    /* Removed the second value, it's not needed for 'gap' */
+    font-size: 14px;
+    position: sticky;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: 1px solid #d1d1d1;
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: flex-start;
+    /* Align list items to the left */
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container li:first-child {
+    display: flex;
+    background-color: hsl(208, 100%, 60%);
+    color: #0c0c0c;
+    width: 250px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.nav-container ul li {
+    margin-left: 0;
+    /* Set the left margin to 0 for all list items */
+}
+
+.nav-container ul li a {
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #383838;
+    transition: 0.5s;
+}
+
+
+/* Quảng cáo đầu trang */
+
+.ad-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.sidebar,
+.product-image {
+    flex: 1 1 100px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    flex: 0.35;
+}
+
+.sidebar {
+    line-height: 0.75;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li {
+    margin-bottom: 1px;
+    border: 0.5px solid #a9a9a9;
+}
+
+.sidebar li a {
+    display: block;
+    color: rgb(10, 10, 10);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 250px;
+    height: 40px;
+}
+
+.sidebar li a:hover {
+    background-color: #33a0ff;
+    color: white;
+}
+
+.product-image {
+    position: relative;
+    width: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.button-more-discovery {
+    display: flex;
+    position: absolute;
+    top: 85%;
+    bottom: 15%;
+    left: 10%;
+    right: 90%;
+    width: 25%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f20707;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all .2s;
+}
+
+.button-more-discovery a {
+    color: rgb(248, 246, 246);
+}
+
+.button-more-discovery:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        /* Display the toggle button on smaller screens */
+    }
+
+    .sidebar {
+        display: none;
+        /* Hide the sidebar by default on smaller screens */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        z-index: 1;
+    }
+
+    .sidebar.active {
+        display: block;
+        /* Display the sidebar when active */
+    }
+
+    .ad-container {
+        position: relative;
+    }
+}
+
+/* Recommend products */
+
+.recommend-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    font-size: 15px;
+    color: #00070b;
+    margin-left: 135px;
+    float: hidden;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-product img {
+    width: 80%;
+}
+
+.product-description {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    flex-direction: row;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.type,
+.name-product {
+    margin-bottom: 5px;
+}
+
+.type {
+    color: #525151;
+}
+
+.name-product {
+    font-weight: bold;
+}
+
+.sale-price,
+.original-price {
+    /* Adjust styles for prices to be in a row */
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.sale-price {
+    color: #40BFFF;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.original-price {
+    color: #D9D9D9;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+
+/*Contact Section*/
+
+.contact {
+    background: #f6f6f6;
+}
+
+.contact-info {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(160px, auto)); */
+    display: flex;
+    gap: 90px;
+    font-size: 15px;
+    color: #00070b;
+    margin-left: 5%;
+}
+
+.contact-info:first-child {
+    display: flex;
+    width: 100%;
+}
+
+/* .contact-info:last-child{
+    display: flex;
+    align-items: right;
+} */
+
+.first-info img {
+    width: 90px;
+    height: auto;
+}
+
+.forth-info iframe {
+    width: 250px;
+    height: auto;
+    margin-right: 10px;
+
+}
+
+.contact-info h4 {
+    color: #0d0d0e;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 3;
+}
+
+.contact-info p {
+    color: #313030;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.first-info p {
+    font-size: 13px;
+
+}
+
+.contact-info p:hover {
+    color: #00070b;
+}
+
+.social-icon {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.social-icon i:hover {
+    transform: scale(1.3);
+}
+
+.end-text {
+    background-color: #edfff1;
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+/* media queries */
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .first-info {
+        margin-bottom: 5px; 
+    }
+
+    .second-info,
+    .third-info,
+    .forth-info {
+        margin-bottom: 5px; 
+    }
+
+    .forth-info iframe {
+        width: 80%; 
+        height: 150px; 
+    }
+
+    .end-text{
+        font-size: 90%;
+    }
+}
+
+/* Style for topnav */
+.topnav a {
+    float: left;
+    /* display: block; */
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.topnav {
+    /* margin-left: 10%; */
+    border-top: 1px solid #cccaca;
+}
+
+.topnav a:first-child {
+    margin-left: 10%;
+}
+
+.topnav a:visited {
+    color: gray;
+}
+
+/* Add an active class to highlight the current page */
+.topnav .active {
+    background-color: #33a0ff;
+    color: white;
+    width: max-content;
+    height: max-content;
+}
+
+.topnav .active:hover {
+    background-color: #33a0ff;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: gray;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 215px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #706f6f;
+    color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Responsive for header  */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Responsive for banner-slider  */
+
+.slider .desktop-screen{
+    display: flex;
+}
+.slider .mobile-screen {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .slider .desktop-screen {
+        display: none;
+    }
+    .slider .mobile-screen {
+        display: flex;
+    }
+}
+
+/* Responsive for .recommend-container  */
+
+
+@media (max-width: 600px) {
+    .recommend-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        gap: 10px;
+        font-size: 70%;
+    }
+
+    .card{
+        margin-bottom: 10px;
+    }
+
+    .img-product img {
+        width: 30%;
+    }
+
+}
+
+/* Responsive for nav  */
+
+@media (max-width: 600px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        text-align: center;
+        gap: 2px;
+    }
+
+    .nav img{
+        width: 20%;
+        height: 20%;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        gap: 2px;
+    }
+
+    .search {
+        /* margin-bottom: 10px;  */
+        display: none;
+    }
+
+    .cart {
+        margin-bottom: 10px; 
+    }
+
+    .sign-in {
+        margin-bottom: 10px;
+    }
+
+    .cart-count {
+        display: none; 
+    }
+}
+
