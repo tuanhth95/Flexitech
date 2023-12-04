@@ -181,8 +181,8 @@ function nextSlide_3() {
 }
 
 // Add event listeners to the buttons
-document.querySelector('.prev').addEventListener('click', prevSlide_3);
-document.querySelector('.next').addEventListener('click', nextSlide_3);
+document.querySelector('.prev0').addEventListener('click', prevSlide_3);
+document.querySelector('.next0').addEventListener('click', nextSlide_3);
 
 
 
@@ -204,3 +204,13 @@ addToCartBtn.addEventListener('click', function() {
   count++; // Increment the count by 1
   updateCartCount(); // Update the cart count displayed
 });
+
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }

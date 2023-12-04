@@ -12,20 +12,20 @@ a {
   text-decoration: none;
 }
 
-a:visited{
+ a:visited{
   color: black;
 }
 
 /* Slider Container  */
-.slider-container {
+.slider-banner {
   position: relative;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1200px;
   /* max-width: 100%; */
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  /* margin-right: 10px; */
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .slider {
@@ -393,6 +393,37 @@ h2 {
   flex-wrap: wrap;
 }
 
+/* Style for prev0 and next0 */
+/* Tạm thời ẩn */
+
+/* .prev0,
+.next0 {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  background-color: rgba(243, 240, 240, 0.146);
+  color: rgba(0, 0, 0, 0.58);
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  /* line-height: 40px;  */
+  /* text-align: center; */
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  /* font-size: 20px; */
+/* } */ 
+
+/* .prev0 {
+  left: 50px;
+}
+
+.next0 {
+  right: 50px;
+} */
+
 /* For desktops and laptops */
 @media (min-width: 1024px) {
   .product-card {
@@ -506,8 +537,8 @@ h2 {
   padding: 0 10vw;
   width: 100%;
   height: 100%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   position: relative;
 }
 
