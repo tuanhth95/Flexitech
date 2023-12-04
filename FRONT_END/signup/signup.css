@@ -6,32 +6,40 @@
 
 html {
     font-size: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "roboto", arial, helvetica;
+    width: 100vw;
+    height: 100vh;
 }
 body{
     background-image: url('backgrounf.jfif');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 #signup_form{
-    margin-left: 50%;
-    margin-top: 5vh;
-    transform: translate(-50%, -0);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 24px;
-    width: min(60%, 800px);;
+    width: min(90%, 600px);;
     height: 90vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5vw 10vw;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: min(10rem, 10%);
+    padding-right: min(10rem, 10%);
+    
 }
 #title{
     text-align: center;
     color: #333;
     font-size: 3.2rem;
-    font-weight: 500;
-    line-height: normal;
+    font-weight: 600;
 }
 #namefield{
     width: 100%;
@@ -44,12 +52,23 @@ body{
 #namefield input{
     width: 100%;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 1.2rem;
     border: 1px solid #888;
 }
 .field {
     width: 100%;
+}
+.field div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.field div img:hover{
+    cursor: pointer;
+}
+.field div img:first-of-type{
+    display: none;
 }
 .label_field{
     width: 100%;
@@ -59,7 +78,7 @@ body{
 .input_field{
     width: 100%;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 1.2rem;
     border: 1px solid #888;
 }
@@ -114,6 +133,10 @@ input[value="Tạo tài khoản"]:hover{
     border: 1px solid #333;
     border-radius: 40px; 
     transition: all 0.2s linear 0s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #continuegoogle:hover{
     text-align: center;
@@ -133,15 +156,4 @@ input[value="Tạo tài khoản"]:hover{
     display: inline-block;
     height: fit-content;
     transform: translate(10%, 0%);
-}
-#continuegoogle span::before{
-    content: "";
-    position: absolute;
-    display: block;
-    left: -3.5rem;
-    background-image: url('Social media logo.svg');
-    margin-right: 1rem; 
-    height: 100%;
-    background-clip: content-box;
-    width: 2.5rem;
 }

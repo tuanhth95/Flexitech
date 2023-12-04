@@ -25,9 +25,11 @@ body{
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     border-radius: 2.4rem;
-    width: 720px;
+    width: min(90%, 600px);
     height: 90vh;
-    padding: 8rem 76px;
+    padding: 8rem 0px 8rem 0px;
+    padding-left: min(10%, 7rem);
+    padding-right: min(10%, 7rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
