@@ -180,16 +180,31 @@ function nextSlide_3() {
   scrollProducts_3(displayCount_3);
 }
 
-// Add event listeners to the buttons
-document.querySelector('.prev0').addEventListener('click', prevSlide_3);
-document.querySelector('.next0').addEventListener('click', nextSlide_3);
+// // Add event listeners to the buttons
+// document.querySelector('.prev0').addEventListener('click', prevSlide_3);
+// document.querySelector('.next0').addEventListener('click', nextSlide_3);
 
 
 
 // Add product to the cart //
 // Get the elements
+// const cartCount = document.querySelector('.cart-count');
+// const addToCartBtn = document.querySelector('.cart-btn');
+
+// // Initialize cart count
+// let count = 0;
+
+// // Function to update cart count
+// function updateCartCount() {
+//   cartCount.textContent = count;
+// }
+
+// // Event listener for the "Add to Cart" button
+// addToCartBtn.addEventListener('click', function() {
+//   count++; // Increment the count by 1
+//   updateCartCount(); // Update the cart count displayed
+// });
 const cartCount = document.querySelector('.cart-count');
-const addToCartBtn = document.querySelector('.cart-btn');
 
 // Initialize cart count
 let count = 0;
@@ -199,12 +214,11 @@ function updateCartCount() {
   cartCount.textContent = count;
 }
 
-// Event listener for the "Add to Cart" button
-addToCartBtn.addEventListener('click', function() {
+// Function to handle "Add to Cart" button click
+function addToCartBtn(button) {
   count++; // Increment the count by 1
   updateCartCount(); // Update the cart count displayed
-});
-
+}
 
 // const cartIcon = document.querySelector('.cart-icon');
 // const cartCount = document.querySelector('.cart-count');

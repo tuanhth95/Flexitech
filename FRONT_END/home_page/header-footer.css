@@ -19,9 +19,9 @@
 }
 
 .nav {
-    padding: 10px 10vw;
+    padding: 5px 1vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 80px;
     /* background: #f6f6f6; */
     /* margin-left: 30px; */
@@ -41,10 +41,10 @@
 
 .nav-items i {
     color: #33a0ff;
-    /* margin-right: 10px; */
-    gap: 10px;
+    /*margin-right: 10px;
+    */gap: 10px;
     font-size: 25px;
-    transition: all .42s;
+
 }
 
 .nav-items i:hover {
@@ -54,7 +54,7 @@
 /* Style for search box  */
 
 .search {
-    width: 600px;
+    width: 45rem;
     display: flex;
     align-items: right;
     border: 1px solid #ccc;
@@ -69,7 +69,12 @@
     border-bottom-left-radius: 10px;
 
 }
-
+@media (max-width: 600px) {
+    .search {
+      width: 100%;
+      /* các quy tắc khác */
+    }
+  }
 .search-box {
     border: none;
     padding: 8px;
@@ -96,8 +101,9 @@
 
 .cart {
     position: relative;
-    display: inline-block;
+    display: flex;
 }
+
 
 .cart-count {
     position: absolute;
