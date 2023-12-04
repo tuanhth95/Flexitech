@@ -193,7 +193,7 @@
     /* Removed the second value, it's not needed for 'gap' */
     font-size: 14px;
     position: sticky;
-    margin-left: 50px; 
+    margin-left: 50px;
     margin-right: 50px;
     border-top: 1px solid #d1d1d1;
 }
@@ -231,11 +231,6 @@
     text-decoration: none;
     color: #383838;
     transition: 0.5s;
-}
-
-/* Media query for smaller screens if needed */
-@media only screen and (max-width: 768px) {
-    /* Additional styles for smaller screens */
 }
 
 
@@ -452,7 +447,7 @@
     margin-left: 5%;
 }
 
-.contact-info:first-child{
+.contact-info:first-child {
     display: flex;
     width: 100%;
 }
@@ -534,78 +529,32 @@
     }
 }
 
-@media (max-width: 768px) {
-
-    header .navbar {
-        position: sticky;
-        z-index: 1;
-        top: 100%;
-        left: 0;
-        right: 0;
-    }
-
-    header .nav a {
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        display: block;
-    }
-
-    header .container {
-        font-size: 70%;
-    }
-
-    header .container a:first-child {
-        width: 70%;
-        height: 70%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        /* Stack items vertically on smaller screens */
-    }
-
-    .nav-items {
-        margin-top: 10px;
-        /* Adjust spacing between items */
-    }
-
-    .search {
-        display: none;
-        /* Hide search box on smaller screens */
-    }
-
-    .sign-in-btn {
-        font-size: 14px;
-        /* Adjust font size for the sign-in button */
-    }
-}
-
-/* Responsive for Contact section */
-
-@media only screen and (max-width: 768px) {
+@media (max-width: 600px) {
     .contact-info {
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        gap: 10px;
     }
 
-    .first-info img {
-        width: 60px;
+    .first-info {
+        margin-bottom: 5px; 
     }
 
-    .social-icon i {
-        font-size: 70%;
+    .second-info,
+    .third-info,
+    .forth-info {
+        margin-bottom: 5px; 
     }
 
     .forth-info iframe {
-        width: 100%;
+        width: 80%; 
+        height: 150px; 
     }
 
-    .contact-info h4 {
-        font-size: 70%
-    }
-
-    .contact-info p {
-        font-size: 70%
+    .end-text{
+        font-size: 90%;
     }
 }
 
@@ -629,15 +578,15 @@
     border-top: 1px solid #cccaca;
 }
 
-.topnav a:first-child{
+.topnav a:first-child {
     margin-left: 10%;
 }
 
-.topnav a:visited{
+.topnav a:visited {
     color: gray;
 }
-  
-  /* Add an active class to highlight the current page */
+
+/* Add an active class to highlight the current page */
 .topnav .active {
     background-color: #33a0ff;
     color: white;
@@ -645,24 +594,24 @@
     height: max-content;
 }
 
-.topnav .active:hover{
+.topnav .active:hover {
     background-color: #33a0ff;
     color: white;
 }
-  
-  /* Hide the link that should open and close the topnav on small screens */
+
+/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-display: none;
+    display: none;
 }
-  
-  /* Dropdown container - needed to position the dropdown content */
-  .dropdown {
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
     float: left;
     overflow: hidden;
-  }
-  
-  /* Style the dropdown button to fit inside the topnav */
-  .dropdown .dropbtn {
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
     font-size: 15px;
     border: none;
     outline: none;
@@ -671,46 +620,177 @@ display: none;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-  }
-  
-  /* Style the dropdown content (hidden by default) */
-  .dropdown-content {
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 215px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  /* Add a dark background on topnav links and the dropdown button on hover */
-  .topnav a:hover, .dropdown:hover .dropbtn {
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
     background-color: #706f6f;
     color: white;
-  }
-  
-  /* Add a grey background to dropdown links on hover */
-  .dropdown-content a:hover {
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 
-  /* Responsive for header  */
+/* Responsive for header  */
 
-  
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Responsive for banner-slider  */
+
+.slider .desktop-screen{
+    display: block;
+}
+.slider .mobile-screen {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .slider .desktop-screen {
+        display: none;
+    }
+    .slider .mobile-screen {
+        display: block;
+    }
+}
+
+/* Responsive for .recommend-container  */
+
+@media (max-width: 600px) {
+    .recommend-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        gap: 10px;
+        font-size: 70%;
+    }
+
+    .card{
+        margin-bottom: 10px;
+    }
+
+    .img-product img {
+        width: 30%;
+    }
+
+}
+
+/* Responsive for nav  */
+
+@media (max-width: 600px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        text-align: center;
+        gap: 2px;
+    }
+
+    .nav img{
+        width: 20%;
+        height: 20%;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        align-items: right; 
+    }
+
+    .search {
+        margin-bottom: 10px; 
+    }
+
+    .search {
+        display: none;
+    }
+
+    .cart {
+        margin-bottom: 10px; 
+    }
+
+    .sign-in {
+        margin-bottom: 10px;
+    }
+
+    .cart-count {
+        display: none; 
+    }
+}
+
