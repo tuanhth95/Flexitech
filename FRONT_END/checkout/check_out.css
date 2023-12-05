@@ -1,7 +1,7 @@
 body {
   width: 70%;
   border-radius: 10px;
-  background: #fff;
+  /* background: black; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -9,6 +9,7 @@ body {
   align-items: center;
   position: relative;
   margin: auto;
+  /* border: 1px solid black; */
 }
 
 /* ========== genneral element ========= */

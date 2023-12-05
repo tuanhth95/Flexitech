@@ -3,7 +3,7 @@ var quantityElement01 = document.getElementById("quantity01");
 var priceElement01 = document.getElementById("price01");
 
 var quantity01 = 0;
-var price01 = 1300000;
+var price01 = 61.7;
 
 var costShip = parseInt(document.getElementById("costShip"));
 // Function to increase the quantity
@@ -35,7 +35,7 @@ var quantityElement02 = document.getElementById("quantity02");
 var priceElement02 = document.getElementById("price02");
 
 var quantity02 = 0;
-var price02 = 1300000;
+var price02 = 49.9;
 
 // Function to increase the quantity
 function increaseQuantity02() {
@@ -61,9 +61,11 @@ function updateQuantityAndPrice02() {
 }
 
 function formatCurrency(value) {
-  return value.toLocaleString("en-US");
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(value);
 }
-
 // Function to update totalPrice
 function updateTotalPrice() {
   var totalPrice = quantity01 * price01 + quantity02 * price02;
@@ -79,11 +81,12 @@ function updateTotalCost() {
   var totalPrice = quantity01 * price01 + quantity02 * price02;
 
   // Calculate the total cost
-  var totalCost = totalPrice + 20000;
+  var totalCost = totalPrice + 0.8;
 
   // Update the displayed total cost on the page
   document.getElementById("totalCost").innerText = formatCurrency(totalCost);
 }
+
 // Trong cart.js
 function redirectToCheckout() {
   // Đường dẫn tương đối từ thư mục cart đến thư mục checkout
@@ -93,5 +96,39 @@ function redirectToCheckout() {
   var absolutePath = new URL(relativePath, window.location.href).href;
 
   // Chuyển hướng đến trang checkout
-  window.location.href = absolutePath;
+  var totalPrice = quantity01 * price01 + quantity02 * price02;
+
+  // Calculate the total cost
+  var totalCost = totalPrice + 20000;
+
+  if (totalPrice > 0) {
+    window.location.href = absolutePath;
+  }
 }
+
+// Function to show the checkout modal
+function showCheckoutModal() {
+  var overlay = document.getElementById("overlay");
+  var checkoutModal = document.getElementById("checkout-modal");
+
+  overlay.style.display = "block";
+  checkoutModal.style.display = "block";
+}
+
+// Function to hide the checkout modal
+function hideCheckoutModal() {
+  var overlay = document.getElementById("overlay");
+  var checkoutModal = document.getElementById("checkout-modal");
+
+  overlay.style.display = "none";
+  checkoutModal.style.display = "none";
+}
+
+// Function to handle the redirection to the checkout page
+// function redirectToCheckout() {
+//   // Show the checkout modal
+//   showCheckoutModal();
+
+//   // Implement logic to redirect to the checkout page (optional)
+//   // window.location.href = "checkout/check_out.html";
+// }
