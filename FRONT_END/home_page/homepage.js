@@ -220,68 +220,6 @@ function addToCartBtn(button) {
   updateCartCount(); // Update the cart count displayed
 }
 
-// const cartIcon = document.querySelector('.cart-icon');
-// const cartCount = document.querySelector('.cart-count');
-
-
-
-// // Lắng nghe sự kiện khi nhấn vào nút "Add to cart"
-// const addToCartBtn = document.querySelector('.cart-btn');
-// addToCartBtn.addEventListener('click', function() {
-//     // Tăng giá trị số lượng trong giỏ hàng khi nhấn
-//     // let count = parseInt(cartCount.textContent);
-//     let count=0;
-//     count++;
-//     cartCount.textContent = count;
-// });
-
-// console(cartCount.textContent);
-
-// let count = 0;
-
-// function updateCartCount() {
-//   const cartCount = document.querySelector('.cart-count');
-//   cartCount.textContent = count;
-// }
-
-// function addToCart() {
-//   count++;
-//   updateCartCount();
-// }
-
-
-// let count = 0;
-
-// function updateCartCount() {
-//   const cartCount = document.querySelector('.cart-count');
-//   cartCount.textContent = count;
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const addToCartBtn = document.querySelector('.cart-btn');
-
-//   addToCartBtn.addEventListener('click', function() {
-//     count++;
-//     updateCartCount();
-//   });
-// });
-
-
-// let count = 0;
-
-// function updateCartCount() {
-//   const cartCount = document.querySelector('.cart-count');
-//   cartCount.textContent = count;
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const addToCartBtn = document.querySelector('.cart-btn');
-
-//   addToCartBtn.addEventListener('click', function() {
-//     count++;
-//     updateCartCount();
-//   });
-// });
 
 
 function myFunction() {
