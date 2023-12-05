@@ -12,11 +12,12 @@
     min-width: 600px;
   }
   #content {
-    position: relative;
     display: block;
     width: 100vw;
-    height: fit-content;
+    margin-top: 16rem;
+    height: max-content;
     background-color: #f4f4f4;
+    margin-bottom: 16rem;
   }
   #content__head  {
     width: 100%;
@@ -220,12 +221,18 @@
     background-color: #c0d1db;
     display: grid;
     grid-template-columns: 2fr 5fr;
+    overflow: hidden;
   }
   .time_line-list__item div.images {
     background-color: #dadada;
     margin-right: 0.8rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .time_line-list__item div a {
+    width: 100%;
+    height: fit-content;
   }
   .time_line-list__item div img {
     width: 100%;
@@ -240,6 +247,7 @@
     justify-content: flex-start;
     padding-bottom: 0.8rem;
     padding-top: 0.8rem;
+    padding-right: 0.8rem;
   }
   .time_line-title {
     font-size: 1.6rem;
@@ -364,10 +372,12 @@
   }
   @media only screen and (min-width: 1200px) {
     #content {
+      position:relative;
       left: 50%;
       transform: translateX(-50%);
       width: min(1200px, 100vw);
-      height: max(800px, 100vh);
+      height: max(800px, fit-content);
+      margin-bottom: 5rem;
     }
     #content__head  {
       height: 600px;
@@ -417,14 +427,18 @@
       height: 7.2rem;
       font-size: 2.4rem;
     }
+    .time_line-list__item{
+      height: 17rem;
+    }
     .time_line-list__item div.images {
       margin-right: 1.6rem;
+      margin-bottom: 0px;
     }
     .time_line-list__item div img {
-      height: 100%;
+      height: fit-content;
     }
     .time_line-list__item div.item-content {
-      padding-bottom: 1.6rem;
+      padding-bottom: 0.8rem;
     }
     .time_line-title {
       font-size: 2rem;
@@ -461,10 +475,11 @@
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     #content {
+      position: relative;
       left: 50%;
       transform: translateX(-50%);
       width: 768px;
-      height: max(800px, 100vh);
+      height: max(800px, fit-content);
     }
     #content__head  {
       height: 500px;
@@ -479,7 +494,7 @@
       grid-auto-flow: column;
     }
     .head-left__title {
-      padding: 1.4rem;
+      padding: 0.8rem;
     }
     .head-left__title:hover span {
       font-size: 1.2rem;
@@ -506,13 +521,35 @@
       font-weight: bold;
       transition: all 0.1s;
     }
+    .meta_info {
+      height: 1.6rem;
+      margin-right: 1.6rem;
+      margin-top: 1.6rem;
+      font-size: 1.6rem;
+    }
+    .meta_info .type {
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+    }
+    .meta_info div.time {
+      margin-right: 1rem;
+    }
+    .meta_info div.time img {
+  
+      width: 1.6rem;
+    }
+    .item-content .extract p {
+      margin-top: 1.6rem;
+      font-size: 1.6rem;
+    }
   }
   @media only screen and (min-width: 1024px) and (max-width: 1199px) {
     #content {
+      position: relative;
       left: 50%;
       transform: translateX(-50%);
       width: 1024px;
-      height: max(800px, 100vh);
+      height: max(800px, fit-content);
     }
     #content__head  {
       height: 600px;
@@ -540,7 +577,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 500px;
+      height: 600px;
     }
     #head__right div:last-of-type {
       margin-bottom: 0rem;
@@ -553,5 +590,26 @@
       height: 30%;
       font-weight: bold;
       transition: all 0.1s;
+    }
+    .meta_info {
+      height: 1.6rem;
+      margin-right: 1.6rem;
+      margin-top: 1.6rem;
+      font-size: 1.6rem;
+    }
+    .meta_info .type {
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+    }
+    .meta_info div.time {
+      margin-right: 1rem;
+    }
+    .meta_info div.time img {
+  
+      width: 1.6rem;
+    }
+    .item-content .extract p {
+      margin-top: 1.6rem;
+      font-size: 1.6rem;
     }
   }
