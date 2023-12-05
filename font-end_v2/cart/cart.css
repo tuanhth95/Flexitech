@@ -159,10 +159,9 @@
   
   .order-info {
     margin: 20px;
-    position:fixed;
     left: 65%;
     width: 30%;
-    margin-top:500px;
+ 
     display: inline-flex;
     padding-left: 0px;
     flex-direction: column;

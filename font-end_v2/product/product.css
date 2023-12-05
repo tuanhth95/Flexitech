@@ -9,7 +9,13 @@ body{
 }
 @font-face {
     font-family: 'Poppins';
-    src: url("font/Poppins.ttf");
+    src: url("/font/Poppins.ttf");
+}
+a {
+    cursor: pointer;
+}
+.product{
+    margin-top:15rem ;
 }
 .product_breadcrumbs{
     min-height: 60px;
@@ -21,13 +27,14 @@ body{
 .product_breadcrumbs a{
     text-decoration: none;
     color:#33A0FF;
+    cursor: pointer;
 }
 .product_aside{
     float: left;
-    width: calc(25% - 40px);
-    height: 100%;
-    margin-left: 20px;
-    margin-right: 20px; 
+    width: 21%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%; 
 }
 .product_main{
     float: right;
@@ -39,6 +46,8 @@ body{
     background-color: #D9D9D9;
     width: 100%;
     height: 40vh;
+    float: right;
+    width: 70%;
 }
 .product_container{
 
@@ -73,7 +82,6 @@ body{
     margin-top: 30px;
     margin-bottom: 20px;
     width: 100%;
-    position: relative;
     padding-right: 10px;
 }
 select{
@@ -323,17 +331,21 @@ select{
 }
 
 @media (max-width: 768px) {
-    .product_logo{
-        flex: 100%;
-        height: 50px;
-        margin: 10px;
-        background-repeat: no-repeat;
-        object-fit: cover;
+    .product_banner{
+        float: none;
+        width: 100%;
     }
-    .product_logo_container{
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    .product_aside{
+        float: none;
     }
-  }
+    .product_main{
+        float: none;
+    }
+    
+}
+
+
+
+
+
+  

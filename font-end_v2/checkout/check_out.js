@@ -42,13 +42,13 @@ function proceedToNextStep() {
   }
   
   function redirectPreviousStep() {
-    var relativePath = "../card/cart.html";
+    var relativePath = "../cart/cart.html";
     var absolutePath = new URL(relativePath, window.location.href).href;
     window.location.href = absolutePath;
   }
   
   function redirectFirstStep() {
-    var relativePath = "../card/cart.html";
+    var relativePath = "../cart/cart.html";
     var absolutePath = new URL(relativePath, window.location.href).href;
     window.location.href = absolutePath;
   }

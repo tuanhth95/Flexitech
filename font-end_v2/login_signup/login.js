@@ -15,3 +15,7 @@ function switchHide() {
         document.querySelector('.password i:last-of-type').setAttribute('style', 'display:none');
     } 
 }
+
+document.querySelector('.login_btn').addEventListener('click',() =>{
+    location.href='../home_page/homepage.html'
+})

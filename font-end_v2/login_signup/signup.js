@@ -51,3 +51,5 @@ function checkMail(){
 
     }
 }
+
+//document.querySelector('input[type=submit]').addEventListener('click', )
