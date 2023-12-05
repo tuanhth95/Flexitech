@@ -275,7 +275,7 @@ form .form-row .textarea{
  
   @media (max-width: 767px){
     .wrapper{
-       padding-top: 7%;
+       padding-top: 20%;
     }
     .user-card:before {
        width: 300%;
