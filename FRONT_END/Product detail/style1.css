@@ -49,7 +49,7 @@ nav a {
     font-size: 16px;
     margin-right: 20px;
 }
-a:hover {
+nav a:hover {
     color: rgb(0, 0, 0);
   }
 
@@ -472,14 +472,17 @@ img{
 
 .cart-icon i {
     font-size: 28px;
-    color: #333; /* Màu biểu tượng */
+    color: #fff; /* Màu biểu tượng */
 }
 
+.cart-icon i:hover {
+    color:#333;
+}
 
 .cart-count {
     position: absolute;
     top: -8px;
-    right: -8px;
+    right: 8px;
     background-color: red; /* Màu nền cho số lượng sản phẩm trong giỏ hàng */
     color: white; /* Màu chữ cho số lượng sản phẩm */
     border-radius: 50%;
@@ -491,9 +494,39 @@ img{
     align-items: center;
     font-weight: bold;
 }
+
+
 /* Responsive */
 @media screen and (max-width: 900px) {
     .cart-icon i {
         font-size: 24px; /* Điều chỉnh kích thước khi độ rộng màn hình nhỏ hơn 900px */
+    }
+}
+
+.user-icon {
+    position: absolute;
+    top: 18px; /* Đặt vị trí đỉnh của biểu tượng tại đỉnh của thanh nav */
+    right: 70px; /* Điều chỉnh vị trí theo trục ngang */
+    cursor: pointer;
+}
+
+.user-icon i {
+    font-size: 28px;
+    color: #ffffff; /* Màu biểu tượng */
+}
+
+.user-icon i:hover {
+    color:#333;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .user-icon i {
+        font-size: 24px; /* Điều chỉnh kích thước khi độ rộng màn hình nhỏ hơn 900px */
+    }
+    .user-icon {
+        right: 50px; /* Điều chỉnh vị trí theo trục ngang khi độ rộng màn hình nhỏ hơn 900px */
+        margin-right: 15px;
     }
 }

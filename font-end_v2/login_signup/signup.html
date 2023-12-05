@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,900;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    <title>Sign up</title>
+</head>
+<body>
+    <div id="signup_form">
+        <div id="title"><span>Đăng ký</span></div>
+        <div id="namefield" class="field">
+            <label for="name" class="label_field">Họ và tên</label><br>
+            <input type="text" name="name" id="name"  class="input_field">
+        </div>
+        <div id="userfield" class="field">
+            <label for="username" class="label_field">Tên đăng nhập</label><br>
+            <input type="text" name="username" id="username"  class="input_field">
+        </div>
+        <div id="emailfield" class="field">
+            <label for="email" class="label_field">Email</label><br>
+            <input type="text" name="email" id="email"  class="input_field">
+        </div>
+        <div id="phonefield" class="field">
+            <label for="phone" class="label_field">Số điện thoại</label><br>
+            <input type="text" name="phone" id="phone"  class="input_field">
+        </div>
+        <div id="passfield" class="field">
+            <div>
+                <label for="password" class="label_field">Mật khẩu</label>
+                <img src="eye-regular.svg" alt="" srcset="">
+                <img src="eye-slash-regular.svg" alt="" srcset="">
+            </div>
+            <input type="password" name="password" id="password"  class="input_field">
+        </div>
+        <div id="retypefield" class="field">
+            <label for="retype" class="label_field">Nhắc lại mật khẩu</label><br>
+            <input type="text" name="retype" id="retype"  class="input_field">
+        </div>
+        <input type="submit" value="Tạo tài khoản">
+        <div id="or">
+            <span>Hoặc</span>
+        </div>
+        <div id="continuegoogle">
+            <div class="google_logo">
+                <img src="Social media logo.svg" alt="" srcset="">
+            </div>
+            <span>Tiếp tục với google </span> 
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

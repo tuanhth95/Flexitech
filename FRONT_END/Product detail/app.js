@@ -21,7 +21,7 @@ function buyNow() {
     // Thêm logic xử lý khi nhấn "Mua ngay" ở đây
     setTimeout(function() {
         // Redirect đến trang thanh toán sau 5 giây
-        window.location.href = 'trang-thanh-toan'; // Thay 'trang-thanh-toan' bằng URL thực tế của trang thanh toán
+        window.location.href = 'http://127.0.0.1:5501/Flexitech/FRONT_END/checkout/check_out.html'; // Thay 'trang-thanh-toan' bằng URL thực tế của trang thanh toán
     }, 5000); // 5 giây
 }
 const cartIcon = document.querySelector('.cart-icon');
