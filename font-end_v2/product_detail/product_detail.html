@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel = "stylesheet" href = "./product_detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../header-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img src="img/logo_blue.png" class="brand-logo" alt="">
+                <div class="nav-items">
+                    <div class="search">
+                        <input type="text" class="search-box" placeholder="Bạn cần tìm gì?">
+                        <button class="search-btn"><i class='bx bx-search'></i></button>
+                    </div>
+                    <a href="#"><i class='bx bxs-bell'></i></a>
+                    <div class="cart">
+                        <a href="../cart/cart.html"><i class='bx bxs-cart'></i></a>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="sign-in">
+                        <a href="../login_signup/login.html"><button class="sign-in-btn">Đăng
+                                nhập</button></a>
+                    </div>
+
+                </div>
+            </div>
+
+       
+        <div class="topnav" id="myTopnav">
+            <a href="../home_page/homepage.html" >Trang chủ</a>
+            <a href="../news/news.html">Bài đăng</a>
+            <a href="#contact">Liên hệ</a>
+            <div class="dropdown">
+                <button class="dropbtn" class="active">DANH MỤC SẢN PHẨM
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../product/product.html">MainBoard</a>
+                    <a href="../product/product.html">Bộ nhớ HHD</a>
+                    <a href="../product/product.html">Bộ nhớ SSD</a>
+                    <a href="../product/product.html">CPU</a>
+                    <a href="../product/product.html">VGA Card</a>
+                    <a href="../product/product.html">Keo tản nhiệt</a>
+                </div>
+            </div>
+            <a href="#">Về chúng tôi</a>
+            <a href="../account_detail/accountdetail.html">Tài khoản</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </nav>
+    </header>
+
+    
+    <div class="breadcrumb">
+        <a href="http://127.0.0.1:5501/Flexitech/FRONT_END/home_page/homepage.html">Trang chủ</a>
+        <span>></span>
+        <a href="http://127.0.0.1:5501/Flexitech/FRONT_END/Product/product.html">Sản phẩm</a>
+        <span>></span>
+       
+        <a href="http://127.0.0.1:5501/Flexitech/FRONT_END/Product%20detail/index1.html">GIGABYTE GeForce RTX</a>
+    </div>
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                        <img id="mainImage" src="https://product.hstatic.net/200000722513/product/gabyte-geforce-rtx-3050-eagle-oc-8g-1_d897bd3d9a254905910d134188c57fe1_aae8887fa8dd4b8b8e0334903ca96b5c_grande.jpg" alt="watch">
+                    </div>
+                    <div class = "hover-container">
+                        <div><img src = "https://www.proshop.de/Images/915x900/3029572_7b22a06a0bc6.png" onclick="changeMainImage(this.src)"></div>
+                        <div><img src = "https://interlink-static2.tsbohemia.cz/gigabyte-geforce-rtx-3050-eagle-oc-8g-image1-big_ies57699566.jpg" onclick="changeMainImage(this.src)"></div>
+                        <div><img src = "https://interlink-static1.tsbohemia.cz/gigabyte-geforce-rtx-3050-eagle-8g-image1-big_ies57697433.jpg" onclick="changeMainImage(this.src)"></div>
+                        <div><img src = "https://media.mts.ee/eyJidWNrZXQiOiJtdHMtcHJvZHVjdC1pbWFnZXMiLCJrZXkiOiJlXC9lNVwvZTUxNGU2NGVlM2ZiYmExY2JlYjJiMTgwNjY4ZjEwYWEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDAsImhlaWdodCI6NTAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=" onclick="changeMainImage(this.src)"></div>
+                        <div><img src = "https://waz.vteximg.com.br/arquivos/ids/212221-1000-1000/121226-4-Placa_de_video_NVIDIA_GeForce_RTX3060_Ti_8GB_PCI_E_GIGABYTE_EAGLE_OC_GVN306TEAGLE-OC8GD_121226.jpg?v=637461850688300000" onclick="changeMainImage(this.src)"></div>
+                    </div>
+                </div>
+                <div class = "product-div-right">
+                    <span class = "product-name">GIGABYTE GeForce RTX 3050 EAGLE OC 8G</span>
+                    <span class = "product-price">5.890.000₫</span>
+                    <p class = "product-description">GIGABYTE được biết đến với việc sản xuất các dòng màn hình, các dòng laptop gaming, ... phục vụ cho các game thủ đầy đủ nhất để xây dựng bộ máy PC của mình. 
+                                                     Ngoài những sản phẩm đó, GIGABYTE cũng tung ra thị trường những chiếc card màn hình như GIGABYTE GeForce RTX 3050 EAGLE OC 8G này đây. 
+                                                     Một sản phẩm cao cấp trang bị các chế độ cùng những bộ phận đáng giá dành cho việc nâng cấp hệ thống máy tính của bạn.</p>
+                    
+                <div class = "btn-groups">
+                    <button type="button" class="add-cart-btn" onclick="addToCart()"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                    <button type="button" class="buy-now-btn" onclick="buyNow()"><i class="fas fa-wallet"></i>buy now</button>
+                    </div>
+                </div>
+            </div>
+            
+           
+
+            <div class="product-detail">
+                <div class="ctsp">
+                    <h2>Chi tiết sản phẩm</h2>
+                    <table>
+                        <tr>
+                            <td>Thương hiệu</td>
+                            <td>GIGABYTE</td>
+                        </tr>
+                        <tr>
+                            <td>Bảo hành</td>
+                            <td>36 tháng</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>GIGABYTE GeForce RTX 3050 EAGLE OC 8G</td>
+                        </tr>
+                        <tr>
+                            <td>Series</td>
+                            <td>RTX Ampere 3050</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>GeForce RTX™ 3050</td>
+                        </tr>
+                        <tr>
+                            <td>Bộ nhới</td>
+                            <td>8GB GDDR6</td>
+                        </tr>
+                        <tr>
+                            <td>Tản nhiệt</td>
+                            <td>Tản nhiệt 2 quạt</td>
+                        </tr>
+                        <tr>
+                            <td>Nguồn tối thiểu</td>
+                            <td>450W</td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước</td>
+                            <td>L=213 W=120 H=41 mm</td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <div class="tskt">
+                    <h2>Thông số kỹ thuật</h2>
+                    <table>
+                        <tr>
+                            <td>Hãng</td>
+                            <td>GIGABYTE</td>
+                        </tr>
+                        <tr>
+                            <td>Dung lượng bộ nhớ</td>
+                            <td>8GB</td>
+                        </tr>
+                        <tr>
+                            <td>Nhân đồ họa</td>
+                            <td>NVIDIA</td>
+                        </tr>
+                        <tr>
+                            <td>Dòng VGA</td>
+                            <td>RTX 3050</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+<!--footer-->
+<div class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <h4>Flexitech</h4>
+            <p>
+                Trong dự án này, chúng tôi phát triển một trang web đơn giản để bán linh kiện máy tính và cải thiện
+                trải
+                nghiệm của khách hàng.
+            </p>
+            <form action="#">
+                <input type="text" placeholder="Your email" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Trang</h4>
+            <ul class="links">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Về chúng tôi</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Chính sách</h4>
+            <ul class="links">
+                <li><a href="#">Bảo hành</a></li>
+                <li><a href="#">Đổi trả</a></li>
+                <li><a href="#">Vận chuyển</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Địa chỉ</h4>
+            <ul class="links">
+                <iframe style="width: 400px; height: 200px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.23380154306!2d10680045352503875!3d10.869813857464234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaS Bo4buNYyBDw7RuZy BuZ2jhu4cgVGjDtG5nIHRpbiAtIMSQSFFHIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1697999721375!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="end-text">
+    <p>Copyright @2023. All Rights Reserved. Designed by Team One.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./product_detail.js"></script>
+    
+</body>
+
+
+</html>
